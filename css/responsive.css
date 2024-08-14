@@ -1,0 +1,755 @@
+/* lg */ 
+@media (min-width: 1400px) {
+	
+	
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.navbar-default .navbar-nav > li {
+		margin-left:0;
+	}
+	.navbar-default .navbar-nav > li a {
+		font-size: 14px;
+	}
+	.services .service{
+		padding:5px;
+		height: 175px;
+	}
+	.service-tabs li a {
+		padding:20px 20px;
+	}
+	.process-image {
+		margin-top: -30px;
+	}
+	.service-tabs li {
+		width:22%;
+	}
+	.portfolio-icons a {
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		font-size: 14px;
+	}
+	
+	.brand-image {
+		margin:0 15px;
+	}
+	
+	.portfolio-info {
+		margin-top:-50px;
+	}
+	/* about us page */
+	
+	.timline-panel {
+		max-width:100%;
+	}
+	
+	
+	/* service page */
+	.services-section .item {
+		padding:30px;
+	}
+	
+	
+	/* project page */
+	.portfoli-menu a {
+		padding:20px 30px;
+	}
+	.portfolio-section .owl-nav {
+		right:100px;
+	}
+	/* project-details */
+	#product-carousel .carousel-indicators li, 
+	#product-carousel .carousel-indicators li.active {
+		width: 83px;
+		height: 76px;
+	}
+	.carousel-controls .carousel-arrow {
+		bottom:-45px;
+	}
+	.call-to-action .brand-info {
+		padding: 0 35px;
+	}
+	.call-to-action .brand-info, 
+	.call-to-action .brand-button {
+		text-align:center;
+		float:none;
+	}
+
+	.features {
+	    margin-bottom: 30px;
+	    height: 150px;
+	}
+	.call-to-action {
+	    padding-top: 35px;
+	    padding-bottom: 35px;
+	}
+	.call-to-action h3 {
+		margin-bottom: 30px;
+	}
+	.call-to-action .btn.btn-primary {
+		float: none;
+	}
+	.info-box, .info-text h5 {
+	    font-size: 12px;
+	}
+	.info-box i {
+		margin-right: 10px;
+		font-size: 30px;
+	}
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	.navbar-default .navbar-nav > li > a {
+		font-size: 14px;
+	}
+	.navbar-default li {
+		margin-left: 0;
+	}
+	.home-content h1 {
+		font-size:25px;
+	}
+	.home-content h2 {
+		font-size:45px;
+	}
+	.home-content {
+		padding-top: 100px;
+		height: auto;
+		padding-bottom: 50px;
+	}
+	.services {
+		margin-top: 100px;
+	}
+	.services .service {
+		margin-bottom: 25px;
+		min-height: 150px;
+	}
+	.image-box {
+		margin-top: 0;
+	}
+	.service-tabs li {
+		width:initial;
+		margin-bottom:35px;
+	}
+	.service-structure li {
+		margin-left:0;
+	}
+	
+	.contact-info{
+		padding:0 10px;
+	}
+	.contact-info.opening-hour{
+		padding-bottom:20px;
+	}
+	
+	.arrow-top i {
+		margin-left:0;
+	}
+	
+	/* features */
+	.skills-section{
+		max-height:initial;
+	}
+	/* about us page */
+	.posted-date li + li {
+		margin-left: 15%;
+	}
+	.timline-panel {
+		max-width:100%;
+	}
+	.posted-date:after {
+		right:5px;
+	}
+	
+	
+	
+	/* project page */
+	.portfoli-menu{
+		margin-bottom:30px;
+	}
+	.portfoli-menu li{
+		margin-top:25px;
+	}
+	
+	.portfolio-section .owl-nav {
+		right:50px;
+	}
+	/* project-details */
+	#product-carousel .carousel-indicators li, 
+	#product-carousel .carousel-indicators li.active {
+		width: 90px;
+		height: 85px;
+	}
+	.carousel-controls .carousel-arrow {
+		bottom:-100px;
+	}
+	.call-to-action .brand-info {
+		padding: 0 35px;
+	}
+	.call-to-action .brand-info, 
+	.call-to-action .brand-button {
+		text-align:center;
+		float:none;
+	}
+	.contact-section h3 {
+		font-size: 18px;
+	}
+	.call-to-action {
+	    padding-top: 35px;
+	    padding-bottom: 35px;
+	}
+	.call-to-action h3 {
+		margin-bottom: 30px;
+	}
+	.call-to-action .btn.btn-primary {
+		float: none;
+	}
+	#project-menu li {
+	    font-size: 16px;
+	    padding: 15px 15px;
+	}
+	#projects .project-content {
+		width:49%;
+	}
+	.recent-projects.section-padding {
+		padding-bottom: 50px;
+	}
+}
+
+
+/* xs */
+@media (max-width: 767px) {
+	h1{
+		font-size:24px;
+	}
+	h2 {
+		font-size:20px;
+	}
+	h3 {
+		font-size:16px;
+	}
+	h4{
+		font-size:15px;
+	}
+	h5 {
+		font-size:13px;
+	}
+	.section-title {
+		margin-bottom: 50px;
+	}
+	.section-title h1 {
+		font-size:15px;
+	}
+	.section-padding {
+		padding-top: 35px;
+		padding-bottom: 50px;
+	}	
+	.service-section.section-padding {
+		padding-bottom: 50px;
+	}
+	.info-box {
+		margin-bottom:0px;
+		float:left;
+		font-size: 12px;
+	}
+	.top-social.pull-right {
+		float: left !important;
+	}
+	.info-box i {
+		font-size: 28px;
+	}
+	.info-text h5 {
+		font-size: 12px;
+	}
+	.navbar-header {
+    	margin-top: 20px;
+	}
+	.navbar-brand > img {
+		margin-top: -10px;
+	}
+	.navbar-default .navbar-nav > li > a {
+		line-height: 20px;
+		font-size: 13px;
+	}
+	.navbar-default li:first-child {
+		margin-left: 15px;
+	}
+	.navbar-collapse {
+		border-top:0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	.main-menu .navbar-nav{
+		margin-top:0;
+	}
+	.home-content {
+		padding-top: 40px;
+		height: auto;
+		padding-bottom: 50px;
+	}
+	.home-content h1{
+		font-size:18px;
+	}
+	.home-content h2 {
+		font-size:36px
+	}
+	.btn.btn-primary {
+		padding: 12px 30px;
+		font-size: 12px;
+	}
+	.btn.btn-primary i {
+		width:45px;
+		line-height:45px;
+	}
+	.services {
+   	 margin-top: 50px;
+	}
+	.services .service {
+		margin-bottom: 20px;
+	}
+	.crane-lifting, .house-plans {
+		margin-top:0;
+	}
+	.box-title h3{
+		font-size:16px;
+	}
+	.image-box {
+		min-width:80px;
+	}
+	.image-box:before {
+		top:-20px;
+	}
+	.service.home-plumbing{
+		padding-top:15px;
+		min-height:165px;
+	}
+	.service-title {
+		padding:15px;
+	}
+	.service-title h4 {
+		font-size:15px;
+		line-height:22px;
+		letter-spacing:2px;
+		word-spacing:2px;
+	}
+	.features {
+    	margin-bottom: 35px;
+	}
+	.features-tabs .nav-tabs > li{
+		overflow:hidden;
+		width:100%;
+	}
+	.features-tabs .nav-tabs > li a {
+		font-size: 15px;
+		padding-left:110px;
+		padding-right:25px;
+		width:100%;
+	}
+	.features-image {
+		padding:15px;
+		min-width:initial;
+		z-index: 10;
+	}
+	.features-section .feature-image {
+		padding-left:15px;
+		padding:15px;
+		text-align:center;
+	}
+	.features-section .feature-image img {
+		display:inline-block;
+	}
+
+	.project-content .project-title h3 {
+		font-size: 18px;
+	}
+
+	.work-process {
+		height:initial;
+	}
+	.process-accordion .panel {
+		padding-left:25px;
+	}
+	.process-number {
+		left:-30px;
+	}
+	.process-number img {
+		width:75%;
+	}
+	.service-tabs li{
+		width:48%;
+		margin-bottom:30px;
+	}
+	.service-tabs li a{
+		padding:20px;
+	}
+	.service-image {
+		margin-bottom:25px;
+	}
+	.service-structure i {
+		width: 70px;
+		height: 70px;
+		line-height: 70px;
+		font-size: 18px;
+	}
+	.service-structure li {
+		margin-left:0;
+	}	
+	.team-member {
+		margin-bottom: 30px
+	}
+	.team-members {
+		padding:0 35px;
+	}
+	.team-section.section-padding {
+		padding-bottom: 10px;
+		padding-top: 0;
+	}
+	.testimonial-section {
+		padding-bottom:30px;
+	}
+	.testimonial {
+		line-height: 22px;
+	}
+	.testimonial-info {
+		padding:0;
+	}
+	.testimonial-slider .owl-dots {
+		bottom: -25px;
+	}
+	.blog-content .time h2 {
+		line-height: 16px;
+		font-size: 14px;
+	}
+	.blog-content .time span {
+		font-size: 14px;
+	}
+	.blog-content.blog-one .time {
+		left: 30px;
+	}
+	.blog-content .time {
+		padding:8px;
+		max-width:60px;
+	}
+	.post-content li {
+		margin-left: 0px;
+	}
+	.pagination {
+		margin-top: 0;
+	}
+	.brand-item {
+		padding: 45px 15px;
+	}
+	.brand-image {
+		margin:0 10px;
+	}
+	.blog-section.section-padding {
+		padding-bottom: 20px;
+	}
+	.call-to-action .btn.btn-primary {
+		margin-top: 0;
+		float: none;
+	}
+	.call-to-action {
+		text-align: center !important;
+		padding-top: 15px;
+		padding-bottom: 30px;
+	}
+	.call-to-action h3 {
+		margin-bottom: 25px;
+		font-size: 24px;
+	}
+	.brand-button.pull-right {
+		float:left !important;
+	}
+	.footer-social li + li {
+		margin-left: 5px;
+	}
+	.footer-social i {
+		font-size:20px;
+	}
+	.arrow-top i {
+		position:absolute;
+		right:10px;
+		bottom:-20px;
+	}
+	.footer-social {
+		width:100%;
+	}
+	.contact-section {
+		padding:20px 0;
+	}
+	
+	/* features */
+	.skills-section{
+		max-height:initial;
+	}
+	.skills-info {
+		padding: 25px 30px;
+	}
+	
+	/* about us page */
+	.posted-date li + li {
+		margin-left: 8%;
+	}
+	.posted-date .year {
+		padding: 2px 20px;
+		font-size: 15px;
+	}	
+	.timline-panel {
+		margin-bottom:15px;
+		max-width:100%;
+	}
+	.timline-section {
+		padding-bottom: 0;
+	}
+	
+	/* service page */
+	.services-section .item {
+		margin-bottom:1px;
+	}
+	.services-section .item.item-middle {
+		margin-top:0;
+	}	
+	.services-section .item.item-right {
+		margin-bottom:0;
+	}
+	/* project page */
+	.portfoli-menu {
+		margin-bottom:30px;
+	}
+	.portfoli-menu li {
+		float:none;
+		width:100%;
+		margin-top:15px;
+	}
+	.portfolio-section .owl-nav {
+		right:25px;
+	}
+	.portfolio-section .owl-prev, 
+	.portfolio-section .owl-next {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.portfolio-section .owl-prev {
+		right:31px;
+	}
+	/* project-details */
+	
+	.call-to-action .brand-info {
+		padding: 0 15px;
+	}
+	.call-to-action .brand-info, 
+	.call-to-action .brand-button {
+		text-align:center;
+		float:none;
+	}
+	
+	/* Blog Details */
+	.blog-details {
+		padding-top: 30px;
+		padding-bottom:30px;
+	}
+	.blog-details .entry-title {
+		margin-top:25px;
+		margin-bottom:15px;
+	}
+	
+	.blog-details .entry-meta li, 
+	.blog-details .entry-meta li a{
+		font-size:12px;
+	}
+	.blog-details .post-tags{
+		margin-bottom:20px;
+	}
+	.blog-details .share-social {
+		border-bottom:0;
+	}	
+	.blog-details .share-social i {
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+		font-size: 12px;
+		margin-right: 5px;
+	}
+	.social.pull-right {
+		float:left !important;
+	}
+	.prev-next {
+		margin-top:20px;
+	}
+	.blog-details .share-social .post-tags i {
+		font-size:18px;
+	}
+
+	.breadcrumb-section {
+		padding-top: 45px;
+		padding-bottom: 20px;
+	}
+	.about-us-section .section-title {
+		margin-bottom: 30px;
+	}
+	.about-us-image {
+	    margin-top: 45px;
+	}
+	#project-menu {
+		margin-bottom: 30px;
+		border:none;
+	}
+	#project-menu li {
+		border-left: 0;
+		padding:10px 20px;
+		font-size: 16px;
+	}
+	#projects .project-content {
+		width:98%;
+		margin-bottom: 5px;
+		min-height: initial;
+	}
+	.recent-projects.section-padding {
+		padding-bottom: 50px;
+	}
+	.pagination > li > a, .pagination > li > span {
+	    padding: 10px 15px;
+	    font-size: 14px;
+	}
+	.breadcrumb-content h1 {
+		text-align: center;
+		float: none;
+		margin-bottom: 0;
+	}
+	.breadcrumb {
+		float: none;
+		text-align: center;
+	}
+	.post-content blockquote {
+		margin:10px 0;
+		font-size: 14px;
+	}
+	.post-author, .post-comment {
+		margin-top: 35px;
+		margin-bottom: 25px;
+	}
+	#gmap {
+		height:300px;
+	}
+	
+}
+
+/* XS Portrait */
+@media (max-width: 479px) {
+	.top-social.pull-right, 
+	.info-box.pull-right, 
+	.info-box .icon-right {
+		float:left !important;
+	}	
+	.info-box .icon-right {
+		margin-right:15px;
+		margin-left:0;
+	}
+	.info-box {
+		margin-bottom: 0;
+		font-size: 12px;
+	}
+	.info-box i {
+		font-size: 28px;
+	}
+	.info-text h5 {
+		font-size: 12px;
+	}
+	.image-box{
+		min-width:60px;
+	}
+	.service-tabs li {
+		width:100%;
+	}
+	.home-content {
+		height: auto;
+		padding-bottom: 30px;
+	}
+	.portfolio-icons a {
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		font-size: 14px;
+	}
+	.team-member {
+		width:100%;
+	}
+	
+	/* about us page */
+	.posted-date li + li {
+		margin-left: 5%;
+	}
+	.posted-date .year {
+		padding: 2px 20px;
+		font-size: 15px;
+	}
+	/* project-details */
+	.carousel-controls .carousel-arrow {
+		bottom:-75px;
+	}
+	
+	.details-info .btn.btn-primary {
+		padding-left:0;
+		font-size:12px;
+	}
+	.prev-next a {
+		font-size:13px;
+	}
+	.blog-details .entry-meta li{
+		border-left:0;
+		border-right:0;
+		margin-bottom:7px;
+	}	
+	.blog-details .entry-meta li:last-child {
+		margin-bottom:0;
+	}
+	.post-author {
+		text-align:center;
+	}
+	.author-image {
+		float: none;
+		margin-right: 0;
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+	.media-body .btn.btn-primary {
+		float:left;
+	}
+	.process-icon, 
+	.left-content .process-icon, 
+	.work-process .process-info {
+	    float: none;
+	    margin-left: 0;
+	    text-align: center; !important;
+	}
+	.services .service {
+		padding: 15px 10px;
+	}
+	
+	.post-content li a {
+		font-size: 10px;
+	}
+	.process-icon img {
+		display: inline-block;
+	}
+	.breadcrumb-content h1 {
+		text-align: center;
+		float: none;
+		margin-bottom: 0;
+	}
+	.breadcrumb {
+		float: none;
+		text-align: center;
+	}
+	.about-section-content {
+		text-align: center;
+	}
+
+}
