@@ -1,0 +1,182 @@
+
+Home Page
+
+Header Section:
+- Contact Information: 
+  - Phone Number
+  - Email Address
+- Social Media Icons: 
+  - Facebook
+  - LinkedIn
+  - Instagram
+
+- Navigation Menu:
+  - Home
+  - About Us
+  - Services
+    - Product Certification
+      - KSA:
+        - SASO
+        - SABER
+        - E-COSMA & SFDA
+      - UAE:
+        - MOIAT (ESMA):
+          - ECAS
+          - EQM
+        - MUNICIPALITY:
+          - MONTAJI
+          - FIRS
+        - TRDA (Telecommunication Devices)
+    - Laboratory Testings (As Per ISO 17025):
+      - Cosmetics
+      - Perfumes
+      - Textiles
+      - Food Contact Materials
+      - Bricks, Tiles, Ceramics, and Sanitary Ware
+      - Footwear and Leather Products
+      - Paper Products
+      - Packaging
+      - RoHS
+    - Management System Consultation:
+      - ISO 22000 Consultation, Implementation, and Certification
+      - HACCP
+      - ISO 9001 Consultation, Implementation, and Certification
+      - GMP Consultation, Implementation, and Certification
+    - Training & Development:
+      - ISO 9001 Lead Auditor Awareness Training
+      - ISO 22000 Lead Auditor Awareness Training
+      - ISO 45001 Lead Auditor Awareness Training
+      - HALAL Awareness Training
+  - Contact Us
+  - Blog
+
+Main Content Section:
+
+1. Banner Section:
+- Three rotating banners showcasing key services or important announcements.
+
+2. Logo Section:
+- Display logos of various certifications:
+  - ESMA LOGO
+  - SABER LOGO
+  - G-MARK LOGO
+  - EMIRATES QUALITY MARK
+  - DUBAI MUNICIPALITY
+  - MOHP
+  - TRADE MARK
+
+3. About SERVYX CERTIFY:
+- Title: Who We Are
+- Content: SERVYX CERTIFY is a UAE-based firm founded in 2015 that provides certification and standardization consulting services. Our expert creative minds provide customer consultation support to help us deliver customer excellence in easy-to-transparent and exceptional ways to meet customers' demands.
+
+4. Our Services:
+- Product Certification: SERVYX CERTIFY provides consultation for Quality Certificates meeting requirements for UAE/KSA/International standards and guarantees the highest standard, meeting our customers’ expectations for prompt delivery and giving confidence to consumers for using a safe product.
+- Training & Development: SERVYX CERTIFY provides suitable certified training courses through accredited and authenticated training bodies:
+  - ISO 9001 Lead Auditor Awareness Training
+  - ISO 22000 Lead Auditor Awareness Training
+  - ISO 45001 Lead Auditor Awareness Training
+  - HALAL Awareness Training
+- Management System Consultation: SERVYX CERTIFY provides consultation services to assist you in obtaining the certification you are looking for. Throughout SERVYX CERTIFY’s technical expertise, we keep you on the right track to match international certification requirements.
+
+5. Latest Blogs:
+- Title: Latest News and Updates
+- Content: Display the latest three blog posts:
+  - SASO News
+  - ESMA News
+  - GSO News
+  - Dubai Municipality News
+
+Footer Section:
+- Links:
+  - Privacy Policy
+  - Terms of Service
+- Contact Information:
+  - Address
+  - Phone Number
+  - Email
+- Social Media Links
+- Google Map Location
+
+
+About Us Page
+
+Header Section:
+- SERVYX CERTIFY provides assistance for exporters, importers, and manufacturers in gaining market access for regulated products in the MENA region. We provide all technical support related to product certification as we have a technically competent team to achieve the best service.
+
+Vision Statement:
+- Our objective for the future is to be a global partner for a "safe and excellent world." To be our clients' go-to partner for quality, safety, security, and sustainability solutions that offer real value in both the physical and digital worlds.
+
+Mission Statement:
+- To assist our clients in reaching their objectives of approaching targeted GCC and Middle East markets by certifying them in accordance with the relevant schemes and a list of authorized standards. We provide all our services with the highest level of trustworthiness, dependability, integrity, and efficiency. We also provide innovative and tailored Pledge, Certification, and inspection services for our customers' businesses and supply chains in order to exceed their requirements.
+
+Footer Section:
+- Links:
+  - Privacy Policy
+  - Terms of Service
+- Contact Information:
+  - Address
+  - Phone Number
+  - Email
+- Social Media Links
+- Google Map Location
+
+
+Service Page
+
+Product Certification
+
+Why Product Certification is Important:
+- A product's certification indicates that it is safe and trustworthy. It serves as a barometer of product quality and a guide for finding reputable manufacturers. Risk can be reduced and minimized by reputable companies. Their commitment to quality and safety is demonstrated by product certification.
+
+KSA Certification (SABER, eCosma & Faseh):
+- SABER:
+  - Exporting Your Products to Saudi Arabia? Let Us Help You Get Your SASO Quality Mark And SABER Certificate. The Saudi government and relevant authorities have set some regulatory standards to ensure that the products exported from different industries across the world into the country meet the standard mark for safety and quality. Your products must be registered with the Saudi Standards, Metrology, and Quality Organization (SASO) and conform to the technical regulations for the exported goods.
+- eCosma & Faseh:
+  - Applicable for Cosmetics and Personal Care Products. COC for Cosmetics and Food exports to the Kingdom.
+
+UAE Product Certification:
+- Product Registration in Dubai Municipality:
+  - The main purpose of Product Registration is consumer safety. Dubai Municipality regulates product safety by ensuring all products meet the guidelines set by the municipality. Each product must be registered before placing it on the market, even for re-export purposes.
+
+Training & Development
+
+- SERVYXCERTIFY provides suitable certified training courses through accredited and authenticated training bodies, including:
+  - ISO 9001 Lead Auditor Awareness Training
+  - ISO 22000 Lead Auditor Awareness Training
+  - ISO 45001 Lead Auditor Awareness Training
+  - HALAL Awareness Training
+
+Management System Consultation
+
+- SERVYXCERTIFY provides consultation services to assist you in obtaining the certification you are looking for. We ensure you stay on the right track to match international certification requirements, including:
+  - ISO 22000 Consultation, Implementation, and Certification
+  - HACCP
+  - ISO 9001 Consultation, Implementation, and Certification
+
+
+Contact Us Page
+
+Main Content:
+- Contact Form: 
+  - Fields for Name, Email, Subject, and Message.
+- Address:
+  - Full Address Details
+- Google Map Location:
+  - Embedded Google Map showing the office location.
+
+
+Blog Page
+
+Main Content:
+- Title: Latest News and Updates
+- Content: List of Blog Entries:
+  - SASO News
+  - MOIAT News
+  - GSO News
+  - Dubai Municipality News
+
+  https://ll-c.co.uk/img/Certification.jpg
+  https://ll-c.co.uk/img/gains.jpg
+  
+
+  use the colours as in html, body { 	font-family: 'montserratregular'; 	font-weight:400; 	font-size:13px; 	color:#6f6f6f; 	background-color: #fff; 	overflow-x:hidden; 	-webkit-font-smoothing: antialiased; }  h1, h2, h3, h4, h5, h6 { 	font-family: 'montserratbold'; 	font-weight:normal; 	letter-spacing:1.5px; }  ul { 	margin:0; 	padding:0;     list-style:none; }  a:hover { 	color: #efbb20; }  a, a:hover, a:active, a:focus, button:focus, .btn:focus, .form-control:focus {     outline: none !important;     text-decoration: none !important;     box-shadow: none !important; }   .image-bg { 	background-repeat: no-repeat; 	-webkit-background-size: cover; 	background-size: cover; 	position: relative; 	z-index: 1;	 }  .overlay { 	position: absolute; 	width: 100%; 	height: 100%; 	top: 0; 	right: 0; 	background-color: rgba(0, 0, 0, 0.54); 	z-index: -1; }  .no-padding { 	padding: 0; }  .btn.btn-primary { 	color: #fff; 	font-size:14px; 	border: none; 	border-radius: 0; 	padding: 15px 45px;     background-color: #efbb20;     text-transform: uppercase;     position: relative;     font-family: 'montserratsemi_bold'; }  .btn.btn-primary i { 	position: absolute; 	right: 0; 	top: 0; 	width: 60px; 	height: 100%; 	line-height: 60px; 	color: #000; 	background-color: #fff; }   .btn.btn-primary:hover { 	background-color:#fff; 	color:#efbb20  }  .btn.btn-primary:hover i { 	color: #fff; 	background-color: #efbb20;	 }  .section-padding { 	padding-top: 75px; 	padding-bottom: 100px; }  .section-title { 	margin-bottom: 80px; }  .section-title h1 { 	font-size: 20px; 	text-transform: uppercase; 	color: #efbb20; 	letter-spacing:2px; }  .section-title h2 { 	margin-top: 0; 	letter-spacing:2px; 	text-transform: uppercase; 	font-family: 'montserratbold'; }  .navbar-default .navbar-toggle .icon-bar {     background-color: #fff; } .navbar-default .navbar-toggle {     border-color: #283949; } .navbar-default .navbar-toggle,  .navbar-default .navbar-toggle:hover,  .navbar-default .navbar-toggle:focus { 	background-color:#283949; }  a, .portfolio-overlay,  .owl-prev, .owl-next, a:after, a:before, .btn.btn-primary i, .features-info i { 	-webkit-transition: all 500ms ease; 	-moz-transition: all 500ms ease; 	-ms-transition: all 500ms ease; 	-o-transition: all 500ms ease; 	transition: all 500ms ease; } , fix the carousel and rest shit aslo fix the navbar using bootsrap or tailwind and give full code , 

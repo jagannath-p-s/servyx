@@ -1,0 +1,124 @@
+# Directory Structure
+
+- **images/**
+  - map-icon.png
+  - **testimonial/**
+    - 3.jpg
+    - 1.jpg
+    - 2.jpg
+  - logo2.png
+  - **others/**
+    - timline.html
+  - **about/**
+    - about.jpg
+  - **bg/**
+    - 4.jpg
+    - 5.jpg
+    - 3.jpg
+    - brand-bg.jpg
+    - 2.jpg
+  - **project/**
+    - 4.jpg
+    - 5.jpg
+    - 8.jpg
+    - 3.jpg
+    - 1.jpg
+    - 7.jpg
+    - 2.jpg
+    - 6.jpg
+  - **team/**
+    - 4.jpg
+    - 3.jpg
+    - 1.jpg
+    - 2.jpg
+  - logo.png
+  - **process/**
+    - proces1.png
+    - proces2.png
+    - proces3.png
+    - proces4.png
+  - **service/**
+    - 3.png
+    - 2.png
+    - 5.png
+    - 6.png
+    - 4.png
+    - 1.png
+  - **blog/**
+    - 4.jpg
+    - 5.jpg
+    - user.jpg
+    - user3.jpg
+    - 3.jpg
+    - 1.jpg
+    - 2.jpg
+    - user-1.jpg
+    - blog-post.jpg
+    - 6.jpg
+  - **ico/**
+    - favicon.ico
+- blog.html
+- index.html
+- **img/**
+  - cbp-sprite.html
+- contact.html
+- reference
+- about.html
+- **css/**
+  - owl.video.play.html
+  - cubeportfolio.min.css
+  - main.css
+  - font-awesome.min.css
+  - responsive.css
+  - owl.carousel.css
+  - bootstrap.min.css
+  - animate.css
+  - magnific-popup.css
+- services.html
+- **fonts/**
+  - montserrat-bold-webfont.woff
+  - montserrat-regular-webfont.svg
+  - montserrat-regular-webfont.ttf
+  - fontawesome-webfontd41d.eot
+  - montserrat-bold-webfont.svg
+  - montserrat-semibold-webfont.woff2
+  - glyphicons-halflings-regular.woff2
+  - glyphicons-halflings-regular.svg
+  - fontawesome-webfont3e6e.ttf
+  - montserrat-extrabold-webfont.woff2
+  - montserrat-bold-webfont.eot
+  - montserrat-bold-webfont.woff2
+  - montserrat-extrabold-webfont.ttf
+  - fontawesome-webfont3e6e.eot
+  - montserrat-bold-webfontd41d.eot
+  - fontawesome-webfont3e6e.svg
+  - montserrat-semibold-webfont.woff
+  - glyphicons-halflings-regular.woff
+  - montserrat-extrabold-webfont.eot
+  - montserrat-extrabold-webfont.woff
+  - montserrat-regular-webfont.woff2
+  - glyphicons-halflings-regular.eot
+  - montserrat-bold-webfont.ttf
+  - montserrat-regular-webfont.eot
+  - glyphicons-halflings-regulard41d.eot
+  - montserrat-extrabold-webfontd41d.eot
+  - montserrat-extrabold-webfont.svg
+  - fontawesome-webfont3e6e.woff
+  - fontawesome-webfont3e6e.woff2
+  - montserrat-semibold-webfont.eot
+  - glyphicons-halflings-regular.ttf
+  - montserrat-semibold-webfont.ttf
+  - montserrat-regular-webfont.woff
+  - montserrat-semibold-webfontd41d.eot
+  - montserrat-regular-webfontd41d.eot
+- app.py
+- **js/**
+  - jquery.min.js
+  - modernizr.min.js
+  - magnific-popup.min.js
+  - jquery.backstretch.min.js
+  - owl.carousel.min.js
+  - gmaps.min.js
+  - custom.js
+  - cubeportfolio.min.js
+  - bootstrap.min.js

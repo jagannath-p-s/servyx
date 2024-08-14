@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Page Title -->
+    <title>SERVYX CERTIFY - Certification and Standardization Consulting Services</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SERVYX CERTIFY provides certification and standardization consulting services in the UAE and KSA, ensuring compliance with regulatory standards.">
+    <meta name="keywords" content="SERVYX CERTIFY, certification, standardization, consulting, UAE, KSA, product certification, ISO training, regulatory compliance">
+    <meta name="author" content="SERVYX CERTIFY">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Custom CSS -->
+<style>
+    .carousel-container-unique {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-inner-unique {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item-unique {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 2s ease-in-out; /* Slower and smoother transition */
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item-unique.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.carousel-content-unique {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+    width: 100%;
+}
+
+.carousel-content-unique h2 {
+    margin: 0 1rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5rem;
+}
+
+.btn-unique {
+    padding: 15px 30px;
+    background-color: #f5b700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+    margin-top: 1rem;
+    border: 2px solid transparent;
+}
+
+.btn-unique:hover {
+    background-color: #fffcf3;
+    color: #f5b700;
+    transform: scale(1.05);
+    border-color: #fff; /* Add border color on hover for contrast */
+}
+
+</style>
+<style>
+    
+    /* CSS for Services Section */
+    .services-section {
+        padding: 60px 0;
+        background-color: #f9f9f9;
+    }
+    
+    .services-section .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .services-section .text-center {
+        margin-bottom: 3rem;
+    }
+    
+    .services-section h2 {
+        font-size: 1.875rem;
+        font-weight: 700;
+        color: #2d3748;
+        margin-bottom: 0.5rem;
+    }
+    
+    .services-section p {
+        color: #718096;
+    }
+    
+    .services-section .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    
+    @media (min-width: 768px) {
+        .services-section .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .services-section .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    .services-section .service-card {
+        padding: 1.5rem;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .services-section .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    .services-section .service-icon {
+        font-size: 2rem;
+        color: #4299e1;
+        margin-bottom: 1rem;
+    }
+    
+    .services-section h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+    
+    .services-section .service-card p {
+        color: #718096;
+    }
+    
+    /* Logos Section */
+    .logos {
+        background-color: #ffffff;
+    }
+    
+    .logos .brand-image {
+        margin: 10px auto;
+        padding: 0px;
+        display: block;
+        transition: transform 0.3s, filter 0.3s;
+        border: none;
+        filter: grayscale(100%);
+        max-width: 140px;
+        height: auto;
+    }
+    
+    .logos .brand-image:hover {
+        transform: scale(1.1);
+        filter: grayscale(0%);
+    }
+    
+    @media (max-width: 768px) {
+        .logos .brand-image {
+            max-width: 120px;
+            filter: grayscale(0%);
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .logos .brand-image {
+            max-width: 90px;
+        }
+    }
+    </style>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="info-box">
+                            <i class="fa fa-phone"></i>
+                            <div class="info-text">
+                                <h5>Call us:</h5>
+                                <span>+123456789</span>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <i class="fa fa-envelope"></i>
+                            <div class="info-text">
+                                <h5>Email:</h5>
+                                <span>info@servyxcertify.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="top-social pull-right">
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-menu">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img class="img-responsive" src="images/logo.png" alt="SERVYX CERTIFY"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="main-content">
+        <!-- Banner Section -->
+        <div class="carousel-container-unique">
+            <div class="carousel-inner-unique">
+                <div class="carousel-item-unique active" style="background-image: url('/banner1.png');">
+                    <div class="carousel-content-unique">
+                        
+                       
+                    </div>
+                </div>
+                <div class="carousel-item-unique" style="background-image: url('/banner2.png');">
+                    <div class="carousel-content-unique">
+                       
+                      
+                    </div>
+                </div>
+                <div class="carousel-item-unique" style="background-image: url('/banner3.png');">
+                    <div class="carousel-content-unique">
+               
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <!-- Logos Section -->
+        <section class="logos text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-2">
+                        <img src="./logo/logoesma.png" alt="ESMA Logo" class="img-responsive brand-image">
+                    </div>
+                    <div class="col-xs-4 col-sm-2">
+                        <img src="./logo/logosaber.png" alt="SABER Logo" class="img-responsive brand-image">
+                    </div>
+                    <div class="col-xs-4 col-sm-2">
+                        <img src="./logo/logogcm.png" alt="G-MARK Logo" class="img-responsive brand-image">
+                    </div>
+                    <div class="col-xs-4 col-sm-2">
+                        <img src="./logo/logoeqm.png" alt="Emirates Quality Mark" class="img-responsive brand-image">
+                    </div>
+                    <div class="col-xs-4 col-sm-2">
+                        <img src="./logo/logodm.png" alt="Dubai Municipality" class="img-responsive brand-image">
+                    </div>
+                    <div class="col-xs-4 col-sm-2">
+                        <img src="./logo/logomhp.png" alt="MOHP Logo" class="img-responsive brand-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About SERVYX CERTIFY Section -->
+        <section class="about-us-section section-padding">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h1>About SERVYX CERTIFY</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="about-section-content">
+                            <h2>About Our Services</h2>
+                            <p>SERVYX CERTIFY is a UAE-based firm founded in 2015 that provides certification and standardization consulting services. Our expert creative minds provide customer consultation support to help us deliver customer excellence in easy-to-transparent and exceptional ways to meet customers' demands.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-us-image">
+                            <img class="img-responsive" src="images/about/about.jpg" alt="About SERVYX CERTIFY">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section class="services-section">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">Our Services</h2>
+                    <p class="text-gray-600">Comprehensive solutions for your certification needs</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="service-card p-6">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-certificate"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Product Certification</h3>
+                        <p class="text-gray-600">SERVYX CERTIFY provides consultation for quality certificates meeting requirements for UAE/KSA/International standards, ensuring the highest standards and prompt delivery.</p>
+                    </div>
+                    <div class="service-card p-6">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Training & Development</h3>
+                        <p class="text-gray-600">We provide certified training courses through accredited bodies, including ISO 9001, ISO 22000, ISO 45001, and HALAL awareness training.</p>
+                    </div>
+                    <div class="service-card p-6">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Management System Consultation</h3>
+                        <p class="text-gray-600">Our consultation services assist you in obtaining the certification you seek, ensuring compliance with international standards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Blogs Section -->
+        <section class="blogs-section section-padding">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Latest Blogs</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="blog-post">
+                            <div class="entry-header">
+                                <div class="blog-image">
+                                    <div class="entry-thumbnail">
+                                        <a href="blog-details.html"><img class="img-responsive" src="images/blog/1.jpg" alt="SASO News"></a>
+                                    </div>
+                                    <div class="time">
+                                        <h2>07 <span>Aug</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-post">
+                                <div class="entry-title">
+                                    <h4><a href="blog-details.html">SASO News</a></h4>
+                                </div>
+                                <div class="post-content">
+                                    <p>Stay updated with the latest news from SASO.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="blog-post">
+                            <div class="entry-header">
+                                <div class="blog-image">
+                                    <div class="entry-thumbnail">
+                                        <a href="blog-details.html"><img class="img-responsive" src="images/blog/2.jpg" alt="ESMA News"></a>
+                                    </div>
+                                    <div class="time">
+                                        <h2>05 <span>Aug</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-post">
+                                <div class="entry-title">
+                                    <h4><a href="blog-details.html">ESMA News</a></h4>
+                                </div>
+                                <div class="post-content">
+                                    <p>Read the latest updates from ESMA.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="blog-post">
+                            <div class="entry-header">
+                                <div class="blog-image">
+                                    <div class="entry-thumbnail">
+                                        <a href="blog-details.html"><img class="img-responsive" src="images/blog/3.jpg" alt="GSO News"></a>
+                                    </div>
+                                    <div class="time">
+                                        <h2>02 <span>Aug</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-post">
+                                <div class="entry-title">
+                                    <h4><a href="blog-details.html">GSO News</a></h4>
+                                </div>
+                                <div class="post-content">
+                                    <p>Find out the latest news from GSO.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <img class="img-responsive" src="images/logo2.png" alt="SERVYX CERTIFY">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <h3>Business Hours</h3>
+                            <p>Our support is available to help you 24 hours a day, seven days a week.</p>
+                            <p>Monday - Thursday @ 09.00 - 17.30</p>
+                            <p>Friday & Saturday @ 10.00 - 16.00</p>
+                            <p>Sunday - <span>Closed</span></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog.html">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <h3>Our Office</h3>
+                            <address>
+                                <ul>
+                                    <li><span>Address:</span> 1052 – 1054 Christchurch Road, Bournemouth, BH7 6DS</li>
+                                    <li><span>Phone:</span> +210 2234 546 78</li>
+                                    <li><span>Email:</span> info@servyxcertify.com</li>
+                                </ul>
+                            </address>
+                            <ul class="footer-social list-inline">
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright-text text-center">
+                    <p>&copy; 2024 SERVYX CERTIFY. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/cubeportfolio.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/custom.js"></script>
+
+   
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-item-unique');
+const totalSlides = slides.length;
+
+function updateCarousel() {
+    slides.forEach((slide, index) => {
+        slide.classList.remove('active');
+    });
+    slides[currentSlide].classList.add('active');
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+}
+
+// Automatically change slides every 5 seconds
+let autoSlideInterval = setInterval(nextSlide, 5000);
+
+// Initialize carousel position
+updateCarousel();
+
+
+</script>
+    
+
+</body>
+
+</html>
