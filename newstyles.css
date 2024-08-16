@@ -611,7 +611,7 @@
     .logos .brand-image {
         width: 140px;
         padding: 5px;
-        filter: grayscale(100%);
+        filter: grayscale(0%);
     }
 }
 
@@ -909,7 +909,7 @@
             left: 0;
             right: 0;
             height: 1px;
-            background-color: white; /* Line separation */
+            background-color: rgb(73, 72, 72); /* Line separation */
         }
 
         .top-social {
@@ -919,3 +919,28 @@
         }
     }
 
+    
+    /* Base styles for mobile */
+.responsive-logo2 {
+height: 25px;
+margin-top: 0px;
+margin-left: 15px;
+}
+
+/* Styles for tablets (768px and up) */
+@media (min-width: 768px) {
+.responsive-logo2 {
+height: 35px;
+margin-top: 25px;
+}
+}
+
+/* Styles for laptops and desktops (1024px and up) */
+@media (min-width: 1024px) {
+.responsive-logo2 {
+height: 45px;
+
+
+}
+}
+ 
