@@ -23,6 +23,11 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="newstyles.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+ 
 
     <!-- Custom CSS for Google Map -->
     <style>
@@ -43,43 +48,86 @@
         .footer-social .fa:hover {
             color: #007bff;
         }
+
+        /* Vision and Mission Section Styles */
+        .vision-mission-section .vision-content,
+        .vision-mission-section .mission-content {
+            padding: 30px;
+            border: 1px solid #e0e0e0;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .vision-mission-section .vision-content h2,
+        .vision-mission-section .mission-content h2 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .vision-mission-section .vision-content p,
+        .vision-mission-section .mission-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        @media (min-width: 768px) {
+            .vision-mission-section .row {
+                display: flex;
+            }
+
+            .vision-mission-section .vision-content,
+            .vision-mission-section .mission-content {
+                flex-grow: 1;
+                margin-bottom: 0;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
     </style>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+ 
 </head>
 
 <body>
     <!-- Header Section -->
-    <header id="header">
-        <div class="top-bar">
+      <!-- Header Section -->
+      <header id="header" >
+        <div class="top-bar" style="background-color: #2f3a4d; padding: 10px 0;">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <div class="info-box">
-                            <i class="fa fa-phone"></i>
-                            <div class="info-text">
-                                <h5>Call us:</h5>
-                                <span>+123456789</span>
-                            </div>
-                        </div>
-                        <div class="info-box">
-                            <i class="fa fa-envelope"></i>
-                            <div class="info-text">
-                                <h5>Email:</h5>
-                                <span>info@servyxcertify.com</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="top-social pull-right">
-                            <ul class="list-inline">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="info-box">
+                    <i class="fa fa-phone"></i>
+                    <span>+971 65460620</span>
+                </div>
+                <div class="info-box">
+                    <i class="fa fa-envelope"></i>
+                    <span>sales@servyxcertify.com</span>
+                </div>
+                <div class="top-social">
+                    <ul class="list-inline">
+                        <li><a href="https://www.facebook.com/servyxcertification"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/servyx-certification/"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+        
         <div class="main-menu">
             <nav class="navbar navbar-default">
                 <div class="container">
@@ -90,12 +138,16 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html"><img class="img-responsive" src="images/logo.png" alt="SERVYX CERTIFY"></a>
+                        <div style="display: flex; align-items: center;">
+                            <a class="navbar-brand" style="display: flex; align-items: center; margin-bottom: 12px;" href="index.html">
+                                <img src="./logo1.png" alt="SERVYX CERTIFY" class="responsive-logo2">
+                            </a>  
+                        </div>
                     </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <div class="collapse navbar-collapse" id="navbar-collapse" >
                         <ul class="nav navbar-nav navbar-right">
                             <li ><a href="index.html">Home</a></li>
-                            <li class="active" ><a href="about.html">About Us</a></li>
+                            <li class="active"><a href="about.html">About Us</a></li>
                             <li><a href="services.html">Services</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                             <li><a href="blog.html">Blog</a></li>
@@ -106,119 +158,113 @@
         </div>
     </header>
 
-    <!-- Main Section -->
-    <main class="main-content">
-        <!-- About Us Section -->
-        <section class="about-us-section section-padding">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h1>About SERVYX CERTIFY</h1>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="about-section-content">
-                            <h2>About Our Company</h2>
-                            <p>SERVYX CERTIFY provides assistance for exporters, importers, and manufacturers in gaining market access for regulated products in the MENA region. We provide all technical support related to product certification as we have a technically competent team to achieve the best service.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Vision Section -->
-        <section class="vision-section section-padding">
-            <div class="container">
-                <div class="section-title text-center">
+  <!-- Main Section -->
+
+<main class="main-content">
+
+    <!-- Hero Banner -->
+    <section class="hero-banner" style="background-image: url('https://yourtrademarkattorney.com/wp-content/uploads/certification-mark.jpg'); background-size: cover; background-position: center; height: 400px; position: relative; ">
+        <div class="banner-overlay" style="background-color: rgba(0, 0, 0, 0.5); height: 100%; display: flex; align-items: center; justify-content: center;">
+            <!-- <h1 style=" margin-left: 10px; color: #fff; font-size: 48px; font-weight: bold; ">SERVYX CERTIFY</h1> <br> -->
+        </div>
+        
+    </section>
+
+    <!-- Introduction Section -->
+
+
+    <!-- Vision and Mission Section -->
+     <style>
+        
+     </style>
+   <section class="vision-mission-section section-padding" style="padding: 30px 0; background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row d-flex align-items-stretch">
+            <div class="col-md-6 text-center d-flex" data-aos="fade-up" data-aos-duration="700">
+                <div class="vision-content flex-fill">
+                    <div class="vision-icon">
+                        <img src="https://icons.veryicon.com/png/o/healthcate-medical/medical-icon/eye-25.png" alt="Vision Icon" style="width: 60px; margin-top: 60px;">
+                    </div>
                     <h2>Our Vision</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="vision-content">
-                            <p>Our objective for the future is to be a global partner for a "safe and excellent world." To be our clients' go-to partner for quality, safety, security, and sustainability solutions that offer real value in both the physical and digital worlds.</p>
-                        </div>
-                    </div>
+                    <p>Our objective for the future is to be a global partner for a "safe and excellent world." To be our clients' go-to partner for quality, safety, security, and sustainability solutions that offer real value in both the physical and digital worlds.</p>
+                <br><br><br><br>
                 </div>
             </div>
-        </section>
-
-        <!-- Mission Section -->
-        <section class="mission-section section-padding">
-            <div class="container">
-                <div class="section-title text-center">
+            <div class="col-md-6 text-center d-flex" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="mission-content flex-fill">
+                    <div class="mission-icon" style="margin-bottom: 20px;">
+                        <img src="vis.png" alt="Mission Icon" style="width: 60px;">
+                    </div>
                     <h2>Our Mission</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="mission-content">
-                            <p>To assist our clients in reaching their objectives of approaching targeted GCC and Middle East markets by certifying them in accordance with the relevant schemes and a list of authorized standards. To provide all of our services with the highest level of trustworthiness, dependability, integrity, and efficiency. To provide innovative and tailored Pledge, Certification, and inspection services for our customers' businesses and supply chains in order to exceed their requirements.</p>
-                        </div>
-                    </div>
+                    <p>To assist our clients in reaching their objectives of approaching targeted GCC and Middle East markets by certifying them in accordance with the relevant schemes and a list of authorized standards. To provide all of our services with the highest level of trustworthiness, dependability, integrity, and efficiency. To provide innovative and tailored Pledge, Certification, and inspection services for our customers' businesses and supply chains in order to exceed their requirements.</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
+</section>
 
+    
+
+</main>
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-duration="800" data-aos-offset="100">
         <div class="contact-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-3">
+                   <div class="col-sm-3" data-aos="fade-right" data-aos-duration="300" data-aos-delay="100">
                         <div class="contact-widget">
-                            <img class="img-responsive" src="images/logo2.png" alt="SERVYX CERTIFY">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h3>Servyxx Certify</h3>
+                            <p>Your Trusted Partner in Certification Services </p>
                         </div>
-                    </div>
-                    <div class="col-sm-3">
+                    </div> 
+                    <div class="col-sm-3" data-aos="fade-right" data-aos-duration="300" data-aos-delay="200">
                         <div class="contact-widget">
                             <h3>Business Hours</h3>
-                            <p>Our support is available to help you 24 hours a day, seven days a week.</p>
-                            <p>Monday - Thursday @ 09.00 - 17.30</p>
-                            <p>Friday & Saturday @ 10.00 - 16.00</p>
+                            <p>Monday - Thursday @ 08:00 AM - 5:00 </p>
                             <p>Sunday - <span>Closed</span></p>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3" data-aos="fade-right" data-aos-duration="300" data-aos-delay="300">
                         <div class="contact-widget">
                             <h3>Quick Links</h3>
                             <ul>
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="projects.html">Projects</a></li>
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="blog.html">Latest News</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3" data-aos="fade-right" data-aos-duration="300" data-aos-delay="400">
                         <div class="contact-widget">
+                            <a href="https://maps.app.goo.gl/LJypxr3rxQTsxg4s6" target="_blank">
+                                <img src="map.jpg" alt="Map to our office" style="width: 200px; height: 100px; border: 3px solid rgb(255, 255, 255); border-radius: 20px; opacity: 0.5;">
+                            </a>
                             <h3>Our Office</h3>
                             <address>
                                 <ul>
-                                    <li><span>Address:</span> 1052 – 1054 Christchurch Road, Bournemouth, BH7 6DS</li>
-                                    <li><span>Phone:</span> +210 2234 546 78</li>
-                                    <li><span>Email:</span> info@servyxcertify.com</li>
+                                    <li><span>Address:</span> Office 104 | 3S Business Centre | Al Sharq | Bu Tena | Sharjah <br> United Arab Emirates</li>
+                                    <li><span>Phone:</span> +971 65460620</li>
+                                    <li><span>Email:</span> sales@servyxcertify.com</li>
                                 </ul>
                             </address>
-                            <ul class="footer-social list-inline">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <ul class="footer-social list-inline" style="margin-top:20px;">
+                                <li><a href="https://www.linkedin.com/company/servyx-certification/"><i class="fa fa-twitter" style="font-size: 35px; color: #a6aab3;"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/servyx-certification/"><i class="fa fa-linkedin-square" style="font-size: 35px; color: #a6aab3;"></i></a></li>
+                                <li><a href="https://www.facebook.com/servyxcertification"><i class="fa fa-facebook-square" style="font-size: 35px; color: #a6aab3;"></i></a></li>
                             </ul>
-                            <div class="map-location">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093557!2d144.95373531531606!3d-37.816279379751885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1c44e71%3A0xf3c7d255c89c34e1!2s1052%20Christchurch%20Rd%2C%20Bournemouth%20BH7%206DS%2C%20UK!5e0!3m2!1sen!2sus!4v1593845290981!5m2!1sen!2sus" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="copyright-text text-center">
-                    <p>&copy; 2024 SERVYX CERTIFY. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
+        
+            
+       <div style="height: 90px; background-color: #273142 ; padding-top: 5px; ">
+        <p style=" margin-top:30px; text-align: center; color: #f7f7f8;">&copy; 2024 SERVYX CERTIFY. All rights reserved.</p>
+        <p style=" margin-top:10px; margin-bottom: 5px; text-align: center; color: #494c52;">Crafted by whitebranding</p>
+       </div>
+      
     </footer>
 
     <!-- JavaScript Files -->
@@ -229,6 +275,22 @@
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
     <script src="js/custom.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 100,
+            easing: 'ease-in-out',
+            once: false,
+            mirror: false,
+            offset: 50,
+            delay: 100,
+            anchorPlacement: 'top-bottom',
+            
+        });
+    </script>
 </body>
 
 </html>

@@ -89,15 +89,18 @@
         <div class="section-title text-center carousel-container-unique" >
             <div class="carousel-inner-unique">
                 <div class="carousel-item-unique active" style="background-image: url('/banner1.png');">
-                    <div class="carousel-content-unique section-title">
+                    <div class="banner-overlay" style=" height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <h1 style="text-align: left; margin-left: 10px; color: #fff; font-size: 48px; font-weight: bold;">SERVYX CERTIFY</h1> <br>
                     </div>
                 </div>
                 <div class="carousel-item-unique" style="background-image: url('/banner2.png');">
-                    <div class="carousel-content-unique">
+                    <div class="banner-overlay" style=" height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <h1 style="text-align: left; margin-left: 10px; color: #fff; font-size: 48px; font-weight: bold;">SERVYX CERTIFY</h1> <br>
                     </div>
                 </div>
                 <div class="carousel-item-unique" style="background-image: url('/banner3.png');">
-                    <div class="carousel-content-unique">
+                    <div class="banner-overlay" style=" height: 100%; display: flex; align-items: center; justify-content: center;">
+                        <h1 style="text-align: left; margin-left: 10px; color: #fff; font-size: 48px; font-weight: bold;">SERVYX CERTIFY</h1> <br>
                     </div>
                 </div>
             </div>
@@ -106,14 +109,15 @@
                 <button onclick="nextSlide()"><i class="fa fa-chevron-right"></i></button>
             </div>
         </div>
+        
 
         <!-- About SERVYX CERTIFY Section -->
         <section class="about-us-section"  >
             <div class="container" style="margin-top: 10px;">
-                <h1 style="color: #f0cc00; text-align: center;" >SERVYX CERTIFY</h1>
+                <!-- <h1 style="color: #f0cc00; text-align: center;" >SERVYX CERTIFY</h1> -->
                 <div class="blogrow">
                     <div class="col-md-6">
-                        <div class="about-section-content" style="margin-top: 10px; text-align: left; font-size: 1rem;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="about-section-content" style="margin-top: 10px; text-align: left; font-size: 1rem;" >
                             <p>SERVYX CERTIFY is a UAE-based firm founded in 2015 that provides certification & standardization consulting services. Our expert creative minds provide customer consultation support to help us deliver customer excellence in easy-to-transparent and exceptional ways to meet customers' demands.</p>
                         </div>
                     </div>
@@ -403,9 +407,9 @@
             
        <div style="height: 90px; background-color: #273142 ; padding-top: 5px; ">
         <p style=" margin-top:30px; text-align: center; color: #f7f7f8;">&copy; 2024 SERVYX CERTIFY. All rights reserved.</p>
-       
+        <p style=" margin-top:10px; margin-bottom: 5px; text-align: center; color: #494c52;">Crafted by whitebranding</p>
        </div>
-       <p style=" margin-top:20px; margin-bottom: 5px; text-align: center; color: #505b6d;">Crafted by whitebranding</p>
+      
     </footer>
 
     <!-- JavaScript Files -->
@@ -452,16 +456,14 @@
 
     <!-- Initialize AOS -->
     <script>
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: false,
-            mirror: false,
-            offset: 50,
-            delay: 100,
-            anchorPlacement: 'top-bottom',
-            
-        });
+
+    AOS.init({
+    duration: 200, // reduce the duration of animations
+    easing: 'ease-in-out',
+    once: true, // play animations only once when scrolling down
+    offset: 60, // trigger animations earlier
+    delay: 10, // reduce delay between animations
+});
     </script>
     <div class="sticky-buttons">
         <a href="https://saber.sa/home/hscodes" class="neumorphic-btn whatsapp-btn" target="_blank">
@@ -481,12 +483,12 @@
     border-radius: 18px;
 background: #e0e0e0;
 box-shadow:  7px 7px 14px #bebebe,
-             -7px -7px 14px #bdbcbc;
+             -7px -7px 14px #dfdfdf94;
 }
 
 .neumorphic-btn {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 6cap;
     background: #ffffff;
     border-radius: 20%;
     display: flex;
@@ -508,8 +510,6 @@ box-shadow:  7px 7px 14px #bebebe,
     font-size: 24px;
     color: #000000; /* WhatsApp color */
 }
-
-
 
 </style>    
 </body>
