@@ -22,21 +22,168 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <style>
+        /* General Styles */
+        body {
+            line-height: 1.6;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 0;
+        }
+        
+        .section-title h1, .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #333;
+            padding-top: 30px;
+        }
+        
+        .about-section-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .about-section-content ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        /* Alternating Background Colors */
+        section:nth-of-type(odd) {
+            background-color: #f9f9f9;
+        }
+
+        section:nth-of-type(even) {
+            background-color: #fff;
+        }
+
+        /* Image Styling */
+        .service-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Card Styles */
+        .service-card {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .section-title h1, .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .about-section-content p {
+                font-size: 1rem;
+            }
+
+            .service-image {
+                margin: 15px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title h1, .section-title h2 {
+                font-size: 1.6rem;
+            }
+
+            .about-section-content p {
+                margin-top: 10px;
+                margin-left: 10px;
+                font-size: 1rem;
+                line-height: 1.4;
+                text-align: left;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+                margin-bottom: 20px;
+            }
+
+            ul li {
+                padding: 8px 0;
+                border-bottom: 1px solid #eee;
+            }
+
+            ul li:last-child {
+                border-bottom: none;
+            }
+            
+            .service-image {
+                margin: 10px 0;
+            }
+            
+        }
+        ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+ul li {
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #ebebeb;
+    text-align: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400 ;
+  
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+ul li:last-child {
+    margin-bottom: 2px;
+}
+
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <!-- Main Section -->
     <main class="main-content">
         <!-- Services Overview Section -->
-        <section class="about-us-section section-padding">
+        <section class="about-us-section">
             <div class="container">
-                <div class="section-title text-center">
+                <div class="section-title text-center" data-aos="fade-up">
                     <h1>Our Services</h1>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="about-section-content text-center">
-                            <p>Discover the comprehensive range of services offered by SERVYX CERTIFY, tailored to meet the needs of exporters, importers, and manufacturers in the MENA region.</p>
+                        <div class="about-section-content text-center" style="max-width: 700px; margin: 0 auto;">
+                            <p>
+                                Discover the comprehensive range of services offered by SERVYX CERTIFY tailored to meet the needs of exporters, importers, and manufacturers in the MENA region.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -46,48 +193,77 @@
         <!-- Product Certification Section -->
         <section class="service-item section-padding">
             <div class="container">
-                <div class="section-title text-center">
-                    <h2>Product Certification</h2>
-                </div>
-                <div class="about-section-content">
-                    <p>SERVYX CERTIFY provides consultation for quality certificates meeting requirements for UAE/KSA/International standards and guarantees the highest standards, meeting our customers' expectations for prompt delivery and consumer safety.</p>
-                    <h3>KSA Certification</h3>
-                    <p>We assist with obtaining SASO Quality Mark and SABER Certificate. The Saudi government has set regulatory standards to ensure that products meet the standard mark for safety and quality.</p>
-                    <ul>
-                        <li>SASO</li>
-                        <li>SABER</li>
-                        <li>E-COSMA & SFDA</li>
-                    </ul>
-                    <h3>UAE Certification</h3>
-                    <p>We help with product registration in Dubai Municipality, ensuring that products meet the safety guidelines set by the municipality.</p>
-                    <ul>
-                        <li>MOIAT (ESMA): ECAS, EQM</li>
-                        <li>Municipality: MONTAJI, FIRS</li>
-                        <li>TRDA (Telecommunication Devices)</li>
-                    </ul>
+                <div class="service-card" data-aos="fade-up">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Product Certification</h2>
+                    </div>
+        
+                    <!-- KSA Certification Section -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://via.placeholder.com/600x400" alt="KSA Certification Image" class="service-image" data-aos="fade-right">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-section-content">
+                                <h3>KSA Certification</h3>
+                                <p>We assist with obtaining SASO Quality Mark and SABER Certificate. The Saudi government has set regulatory standards to ensure that products meet the standard mark for safety and quality.</p>
+                                <ul data-aos="fade-up">
+                                    <li>SASO</li>
+                                    <li>SABER</li>
+                                    <li>E-COSMA & SFDA</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- UAE Certification Section -->
+                    <div class="row" style="margin-top: 40px;">
+                        <div class="col-md-6">
+                            <img src="https://via.placeholder.com/600x400" alt="UAE Certification Image" class="service-image" data-aos="fade-left">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-section-content">
+                                <h3>UAE Certification</h3>
+                                <p>We help with product registration in Dubai Municipality, ensuring that products meet the safety guidelines set by the municipality.</p>
+                                <ul data-aos="fade-up">
+                                    <li>MOIAT (ESMA): ECAS, EQM</li>
+                                    <li>Municipality: MONTAJI, FIRS</li>
+                                    <li>TRDA (Telecommunication Devices)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
         <!-- Laboratory Testing Section -->
         <section class="service-item section-padding">
             <div class="container">
-                <div class="section-title text-center">
-                    <h2>Laboratory Testing</h2>
-                </div>
-                <div class="about-section-content">
-                    <p>Our laboratory testing services are performed according to ISO 17025 standards for various products, ensuring compliance and safety.</p>
-                    <ul>
-                        <li>Cosmetics</li>
-                        <li>Perfumes</li>
-                        <li>Textiles</li>
-                        <li>Food Contact Materials</li>
-                        <li>Bricks, Tiles, Ceramics, and Sanitary Ware</li>
-                        <li>Footwear and Leather Products</li>
-                        <li>Paper Products</li>
-                        <li>Packaging</li>
-                        <li>RoHS</li>
-                    </ul>
+                <div class="service-card" data-aos="fade-up">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Laboratory Testing</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://via.placeholder.com/600x700" alt="Laboratory Testing Image" class="service-image" data-aos="fade-left">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-section-content">
+                                <p>Our laboratory testing services are performed according to ISO 17025 standards for various products, ensuring compliance and safety.</p>
+                                <ul data-aos="fade-up">
+                                    <li>Cosmetics</li>
+                                    <li>Perfumes</li>
+                                    <li>Textiles</li>
+                                    <li>Food Contact Materials</li>
+                                    <li>Bricks, Tiles, Ceramics, and Sanitary Ware</li>
+                                    <li>Footwear and Leather Products</li>
+                                    <li>Paper Products</li>
+                                    <li>Packaging</li>
+                                    <li>RoHS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -95,17 +271,26 @@
         <!-- Management System Consultation Section -->
         <section class="service-item section-padding">
             <div class="container">
-                <div class="section-title text-center">
-                    <h2>Management System Consultation</h2>
-                </div>
-                <div class="about-section-content">
-                    <p>We provide consultation services to assist you in obtaining the certification you seek. Our technical expertise ensures compliance with international certification requirements.</p>
-                    <ul>
-                        <li>ISO 22000 Consultation, Implementation, and Certification</li>
-                        <li>HACCP</li>
-                        <li>ISO 9001 Consultation, Implementation, and Certification</li>
-                        <li>GMP Consultation, Implementation, and Certification</li>
-                    </ul>
+                <div class="service-card" data-aos="fade-up">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Management System Consultation</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://via.placeholder.com/600x400" alt="Management System Consultation Image" class="service-image" data-aos="fade-right">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-section-content">
+                                <p>We provide consultation services to assist you in obtaining the certification you seek. Our technical expertise ensures compliance with international certification requirements.</p>
+                                <ul data-aos="fade-up">
+                                    <li>ISO 22000 Consultation, Implementation, and Certification</li>
+                                    <li>HACCP</li>
+                                    <li>ISO 9001 Consultation, Implementation, and Certification</li>
+                                    <li>GMP Consultation, Implementation, and Certification</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -113,17 +298,26 @@
         <!-- Training & Development Section -->
         <section class="service-item section-padding">
             <div class="container">
-                <div class="section-title text-center">
-                    <h2>Training & Development</h2>
-                </div>
-                <div class="about-section-content">
-                    <p>We provide certified training courses through accredited bodies, ensuring that your team is knowledgeable and compliant with relevant standards.</p>
-                    <ul>
-                        <li>ISO 9001 Lead Auditor Awareness Training</li>
-                        <li>ISO 22000 Lead Auditor Awareness Training</li>
-                        <li>ISO 45001 Lead Auditor Awareness Training</li>
-                        <li>HALAL Awareness Training</li>
-                    </ul>
+                <div class="service-card" data-aos="fade-up">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>Training & Development</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://via.placeholder.com/600x400" alt="Training & Development Image" class="service-image" data-aos="fade-left">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-section-content">
+                                <p>We provide certified training courses through accredited bodies, ensuring that your team is knowledgeable and compliant with relevant standards.</p>
+                                <ul data-aos="fade-up">
+                                    <li>ISO 9001 Lead Auditor Awareness Training</li>
+                                    <li>ISO 22000 Lead Auditor Awareness Training</li>
+                                    <li>ISO 45001 Lead Auditor Awareness Training</li>
+                                    <li>HALAL Awareness Training</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -140,6 +334,16 @@
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
     <script src="js/custom.js"></script>
-</body>
-</html>
 
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration
+            once: true, // Whether animation should happen only once
+        });
+    </script>
+</body>
+
+
+</html>
