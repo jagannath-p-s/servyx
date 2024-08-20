@@ -27,109 +27,115 @@
 
     <!-- Custom CSS for Animations and Styles -->
     <style>
-        /* General Styles */
-        body {
-            line-height: 1.6;
-            scroll-behavior: smooth; /* Smooth scrolling */
-        }
+    /* General Styles */
+body {
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
 
-        /* Vision and Mission Section */
-        .vision-mission-section {
-            padding: 50px 50px;
-            background-color: #f8f9fa;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            text-align: left;
-        }
+/* Vision and Mission Section */
+.vision-mission-section {
+    padding: 50px 50px;
+    background-color: #f8f9fa;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: left;
+}
 
-        @media (min-width: 768px) {
-            .vision-mission-section {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
+@media (min-width: 768px) {
+    .vision-mission-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
-        .vision-content, .mission-content {
-            background: #fff;
-            padding: 30px 25px;
-            border-radius: 10px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            opacity: 0; /* Initially hidden */
-            transform: translateY(30px);
-            transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.3s ease;
-            margin: 20px;
-        }
+.vision-content, .mission-content {
+    background: linear-gradient(145deg, #ffffff, #f1f3f4);
+    padding: 35px 30px;
+    border-radius: 15px;
+    border: 2px solid #e3e4e5;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px);
+    transition: transform 0.7s ease, opacity 0.7s ease, box-shadow 0.4s ease;
+    margin: 30px 25px;
+}
 
-        .visible {
-            opacity: 1; /* Fully visible */
-            transform: translateY(0);
-        }
+.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0);
+}
 
-        .vision-content:hover, .mission-content:hover {
-            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-        }
+.vision-content:hover, .mission-content:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
 
-        .vision-content h2, .mission-content h2 {
-            font-size: 26px;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
+.vision-content h2, .mission-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  
+}
 
-        .vision-content p, .mission-content p {
-            font-size: 14px;
-            line-height: 1.6;
-            color: #555;
-        }
+.vision-content p, .mission-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+}
 
-        .vision-icon, .mission-icon {
-            margin-bottom: 15px;
-        }
+.vision-icon, .mission-icon {
+    margin-bottom: 20px;
+}
 
-        .vision-icon img, .mission-icon img {
-            width: 50px; /* Ensure icon size consistency */
-            display: block;
-            margin: 0 auto 15px; /* Center the icon and provide space below */
-        }
+.vision-icon img, .mission-icon img {
+    width: 55px;
+    transition: transform 0.3s ease;
+}
 
-        /* Mobile View Adjustments */
-        @media (max-width: 480px) {
-            .vision-mission-section {
-                padding: 20px 10px;
-            }
+.vision-icon img:hover, .mission-icon img:hover {
+    transform: scale(1.1);
+}
 
-            .vision-content, .mission-content {
-                margin: 10px 5px;
-                padding: 20px;
-            }
+/* Mobile View Adjustments */
+@media (max-width: 480px) {
+    .vision-mission-section {
+        padding: 20px 10px;
+    }
 
-            .vision-content h2, .mission-content h2 {
-                font-size: 22px;
-            }
+    .vision-content, .mission-content {
+        margin: 10px 5px;
+        padding: 35px;
+    }
 
-            .vision-content p, .mission-content p {
-                font-size: 13px;
-            }
+    .vision-content h2, .mission-content h2 {
+        font-size: 22px;
+    }
 
-            .vision-icon img, .mission-icon img {
-                width: 45px;
-            }
-        }
+    .vision-content p, .mission-content p {
+        font-size: 13px;
+    }
 
-        /* Footer Styles */
-        .footer-social .fa {
-            font-size: 20px;
-            margin-right: 10px;
-            color: #555;
-            transition: color 0.3s;
-        }
+    .vision-icon img, .mission-icon img {
+        width: 45px;
+    }
+}
 
-        .footer-social .fa:hover {
-            color: #007bff;
-        }
+/* Footer Styles */
+.footer-social .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.footer-social .fa:hover {
+    color: #007bff;
+}
+
     </style>
 </head>
 
@@ -175,7 +181,7 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="services.html">Services</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
