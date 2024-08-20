@@ -23,9 +23,6 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-
     <style>
         /* General Styles */
         body {
@@ -41,22 +38,18 @@
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 20px;
-            color: #333;
             padding-top: 30px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
         }
         
-        .about-section-content p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            color: #555;
-            margin-bottom: 20px;
+        .about-section-content p, .about-section-content ul, .service-image {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
         }
 
-        .about-section-content ul {
-            padding-left: 20px;
-            margin-bottom: 20px;
-        }
-        
         /* Alternating Background Colors */
         section:nth-of-type(odd) {
             background-color: #f9f9f9;
@@ -136,35 +129,40 @@
             }
             
         }
+
         ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 1rem;
-    color: #333;
-}
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #333;
+        }
 
-ul li {
-    padding: 12px 20px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    background-color: #ebebeb;
-    text-align: center;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 400 ;
-  
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
+        ul li {
+            padding: 12px 20px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background-color: #ebebeb;
+            text-align: center;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 400;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
 
-ul li:hover {
-    background-color: #e0e0e0;
-    transform: translateY(-2px);
-}
+        ul li:hover {
+            background-color: #e0e0e0;
+            transform: translateY(-2px);
+        }
 
-ul li:last-child {
-    margin-bottom: 2px;
-}
+        ul li:last-child {
+            margin-bottom: 2px;
+        }
+
+        .fade-in {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
 
     </style>
 </head>
@@ -175,7 +173,7 @@ ul li:last-child {
         <!-- Services Overview Section -->
         <section class="about-us-section">
             <div class="container">
-                <div class="section-title text-center" data-aos="fade-up">
+                <div class="section-title text-center">
                     <h1>Our Services</h1>
                 </div>
                 <div class="row">
@@ -193,21 +191,21 @@ ul li:last-child {
         <!-- Product Certification Section -->
         <section class="service-item section-padding">
             <div class="container">
-                <div class="service-card" data-aos="fade-up">
-                    <div class="section-title text-center" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="section-title text-center">
                         <h2>Product Certification</h2>
                     </div>
         
                     <!-- KSA Certification Section -->
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="https://via.placeholder.com/600x400" alt="KSA Certification Image" class="service-image" data-aos="fade-right">
+                            <img src="https://via.placeholder.com/600x400" alt="KSA Certification Image" class="service-image">
                         </div>
                         <div class="col-md-6">
                             <div class="about-section-content">
                                 <h3>KSA Certification</h3>
                                 <p>We assist with obtaining SASO Quality Mark and SABER Certificate. The Saudi government has set regulatory standards to ensure that products meet the standard mark for safety and quality.</p>
-                                <ul data-aos="fade-up">
+                                <ul>
                                     <li>SASO</li>
                                     <li>SABER</li>
                                     <li>E-COSMA & SFDA</li>
@@ -219,13 +217,13 @@ ul li:last-child {
                     <!-- UAE Certification Section -->
                     <div class="row" style="margin-top: 40px;">
                         <div class="col-md-6">
-                            <img src="https://via.placeholder.com/600x400" alt="UAE Certification Image" class="service-image" data-aos="fade-left">
+                            <img src="https://via.placeholder.com/600x400" alt="UAE Certification Image" class="service-image">
                         </div>
                         <div class="col-md-6">
                             <div class="about-section-content">
                                 <h3>UAE Certification</h3>
                                 <p>We help with product registration in Dubai Municipality, ensuring that products meet the safety guidelines set by the municipality.</p>
-                                <ul data-aos="fade-up">
+                                <ul>
                                     <li>MOIAT (ESMA): ECAS, EQM</li>
                                     <li>Municipality: MONTAJI, FIRS</li>
                                     <li>TRDA (Telecommunication Devices)</li>
@@ -236,21 +234,22 @@ ul li:last-child {
                 </div>
             </div>
         </section>
+
         <!-- Laboratory Testing Section -->
         <section class="service-item section-padding">
             <div class="container">
-                <div class="service-card" data-aos="fade-up">
-                    <div class="section-title text-center" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="section-title text-center">
                         <h2>Laboratory Testing</h2>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="https://via.placeholder.com/600x700" alt="Laboratory Testing Image" class="service-image" data-aos="fade-left">
+                            <img src="https://via.placeholder.com/600x700" alt="Laboratory Testing Image" class="service-image">
                         </div>
                         <div class="col-md-6">
                             <div class="about-section-content">
                                 <p>Our laboratory testing services are performed according to ISO 17025 standards for various products, ensuring compliance and safety.</p>
-                                <ul data-aos="fade-up">
+                                <ul>
                                     <li>Cosmetics</li>
                                     <li>Perfumes</li>
                                     <li>Textiles</li>
@@ -271,18 +270,18 @@ ul li:last-child {
         <!-- Management System Consultation Section -->
         <section class="service-item section-padding">
             <div class="container">
-                <div class="service-card" data-aos="fade-up">
-                    <div class="section-title text-center" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="section-title text-center">
                         <h2>Management System Consultation</h2>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="https://via.placeholder.com/600x400" alt="Management System Consultation Image" class="service-image" data-aos="fade-right">
+                            <img src="https://via.placeholder.com/600x400" alt="Management System Consultation Image" class="service-image">
                         </div>
                         <div class="col-md-6">
                             <div class="about-section-content">
                                 <p>We provide consultation services to assist you in obtaining the certification you seek. Our technical expertise ensures compliance with international certification requirements.</p>
-                                <ul data-aos="fade-up">
+                                <ul>
                                     <li>ISO 22000 Consultation, Implementation, and Certification</li>
                                     <li>HACCP</li>
                                     <li>ISO 9001 Consultation, Implementation, and Certification</li>
@@ -298,18 +297,18 @@ ul li:last-child {
         <!-- Training & Development Section -->
         <section class="service-item section-padding">
             <div class="container">
-                <div class="service-card" data-aos="fade-up">
-                    <div class="section-title text-center" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="section-title text-center">
                         <h2>Training & Development</h2>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="https://via.placeholder.com/600x400" alt="Training & Development Image" class="service-image" data-aos="fade-left">
+                            <img src="https://via.placeholder.com/600x400" alt="Training & Development Image" class="service-image">
                         </div>
                         <div class="col-md-6">
                             <div class="about-section-content">
                                 <p>We provide certified training courses through accredited bodies, ensuring that your team is knowledgeable and compliant with relevant standards.</p>
-                                <ul data-aos="fade-up">
+                                <ul>
                                     <li>ISO 9001 Lead Auditor Awareness Training</li>
                                     <li>ISO 22000 Lead Auditor Awareness Training</li>
                                     <li>ISO 45001 Lead Auditor Awareness Training</li>
@@ -324,6 +323,64 @@ ul li:last-child {
     </main>
 
     <!-- Footer Section -->
+     
+    <!-- Footer Section -->
+    <footer class="footer scroll-anim" >
+        <div class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <h3>Servyxx Certify</h3>
+                            <p>Your Trusted Partner in Certification Services</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Thursday @ 08:00 AM - 5:00</p>
+                            <p>Sunday - <span>Closed</span></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog.html">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <a href="https://maps.app.goo.gl/LJypxr3rxQTsxg4s6" target="_blank">
+                                <img src="map.jpg" alt="Map to our office" style="width: 200px; height: 100px; border: 3px solid rgb(255, 255, 255); border-radius: 20px; opacity: 0.5;">
+                            </a>
+                            <h3>Our Office</h3>
+                            <address>
+                                <ul>
+                                    <li><span>Address:</span> Office 104 | 3S Business Centre | Al Sharq | Bu Tena | Sharjah <br> United Arab Emirates</li>
+                                    <li><span>Phone:</span> +971 65460620</li>
+                                    <li><span>Email:</span> sales@servyxcertify.com</li>
+                                </ul>
+                            </address>
+                            <ul class="footer-social list-inline" style="margin-top:20px;">
+                                <li><a href="https://www.linkedin.com/company/servyx-certification/"><i class="fa fa-twitter" style="font-size: 35px; color: #a6aab3;"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/servyx-certification/"><i class="fa fa-linkedin-square" style="font-size: 35px; color: #a6aab3;"></i></a></li>
+                                <li><a href="https://www.facebook.com/servyxcertification"><i class="fa fa-facebook-square" style="font-size: 35px; color: #a6aab3;"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="height: 90px; background-color: #273142; padding-top: 5px;">
+            <p style="margin-top:30px; text-align: center; color: #f7f7f8;">&copy; 2024 SERVYX CERTIFY. All rights reserved.</p>
+            <p style="text-align: center; background-color: #273142; margin: 0; color: #67799946;">crafted by Whitebranding</p>
+        </div>
+    </footer>
 
 
     <!-- JavaScript Files -->
@@ -335,15 +392,29 @@ ul li:last-child {
     <script src="js/jquery.backstretch.min.js"></script>
     <script src="js/custom.js"></script>
 
-    <!-- AOS JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1000, // Animation duration
-            once: true, // Whether animation should happen only once
+        document.addEventListener('DOMContentLoaded', function () {
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const handleIntersect = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(handleIntersect, options);
+            const targets = document.querySelectorAll('.section-title h1, .section-title h2, .about-section-content p, .about-section-content ul, .service-image');
+            targets.forEach(target => {
+                observer.observe(target);
+            });
         });
     </script>
 </body>
-
-
 </html>

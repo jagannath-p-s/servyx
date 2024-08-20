@@ -25,19 +25,101 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="newstyles.css">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-
- 
-
-    <!-- Custom CSS for Google Map -->
+    <!-- Custom CSS for Animations and Styles -->
     <style>
-        .map-location iframe {
-            width: 100%;
-            height: 150px;
-            border: 0;
-            margin-top: 15px;
+        /* General Styles */
+        body {
+            line-height: 1.6;
+            scroll-behavior: smooth; /* Smooth scrolling */
         }
 
+        /* Vision and Mission Section */
+        .vision-mission-section {
+            padding: 50px 50px;
+            background-color: #f8f9fa;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            text-align: left;
+        }
+
+        @media (min-width: 768px) {
+            .vision-mission-section {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .vision-content, .mission-content {
+            background: #fff;
+            padding: 30px 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0; /* Initially hidden */
+            transform: translateY(30px);
+            transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.3s ease;
+            margin: 20px;
+        }
+
+        .visible {
+            opacity: 1; /* Fully visible */
+            transform: translateY(0);
+        }
+
+        .vision-content:hover, .mission-content:hover {
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .vision-content h2, .mission-content h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .vision-content p, .mission-content p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .vision-icon, .mission-icon {
+            margin-bottom: 15px;
+        }
+
+        .vision-icon img, .mission-icon img {
+            width: 50px; /* Ensure icon size consistency */
+            display: block;
+            margin: 0 auto 15px; /* Center the icon and provide space below */
+        }
+
+        /* Mobile View Adjustments */
+        @media (max-width: 480px) {
+            .vision-mission-section {
+                padding: 20px 10px;
+            }
+
+            .vision-content, .mission-content {
+                margin: 10px 5px;
+                padding: 20px;
+            }
+
+            .vision-content h2, .mission-content h2 {
+                font-size: 22px;
+            }
+
+            .vision-content p, .mission-content p {
+                font-size: 13px;
+            }
+
+            .vision-icon img, .mission-icon img {
+                width: 45px;
+            }
+        }
+
+        /* Footer Styles */
         .footer-social .fa {
             font-size: 20px;
             margin-right: 10px;
@@ -48,66 +130,13 @@
         .footer-social .fa:hover {
             color: #007bff;
         }
-
-        /* Vision and Mission Section Styles */
-        .vision-mission-section .vision-content,
-        .vision-mission-section .mission-content {
-            padding: 30px;
-            border: 1px solid #e0e0e0;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin-bottom: 20px;
-            animation: fadeInUp 1s ease-in-out;
-        }
-
-        .vision-mission-section .vision-content h2,
-        .vision-mission-section .mission-content h2 {
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .vision-mission-section .vision-content p,
-        .vision-mission-section .mission-content p {
-            font-size: 16px;
-            line-height: 1.8;
-            color: #555;
-        }
-
-        @media (min-width: 768px) {
-            .vision-mission-section .row {
-                display: flex;
-            }
-
-            .vision-mission-section .vision-content,
-            .vision-mission-section .mission-content {
-                flex-grow: 1;
-                margin-bottom: 0;
-            }
-        }
-
-        /* Animation */
-        @keyframes fadeInUp {
-            from {
-                transform: translateY(20px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
     </style>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-
- 
 </head>
 
 <body>
+
     <!-- Header Section -->
-      <!-- Header Section -->
-      <header id="header" >
+    <header id="header">
         <div class="top-bar" style="background-color: #2f3a4d; padding: 10px 0;">
             <div class="container">
                 <div class="info-box">
@@ -127,7 +156,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="main-menu">
             <nav class="navbar navbar-default">
                 <div class="container">
@@ -141,13 +170,13 @@
                         <div style="display: flex; align-items: center;">
                             <a class="navbar-brand" style="display: flex; align-items: center; margin-bottom: 12px;" href="index.html">
                                 <img src="./logo1.png" alt="SERVYX CERTIFY" class="responsive-logo2">
-                            </a>  
+                            </a>
                         </div>
                     </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapse" >
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li ><a href="index.html">Home</a></li>
-                            <li class="active"><a href="about.html">About Us</a></li>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
                             <li><a href="services.html">Services</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                             <li><a href="blog.html">Blog</a></li>
@@ -158,74 +187,96 @@
         </div>
     </header>
 
+    <!-- Main Section -->
+    <main class="main-content">
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <div class="banner-overlay">
+                <!-- Additional content can go here if needed -->
+            </div>
+        </section>
 
-  <!-- Main Section -->
-
-<main class="main-content">
-
-    <!-- Hero Banner -->
-    <section class="hero-banner" style="background-image: url('https://yourtrademarkattorney.com/wp-content/uploads/certification-mark.jpg'); background-size: cover; background-position: center; height: 400px; position: relative; ">
-        <div class="banner-overlay" style="background-color: rgba(0, 0, 0, 0.5); height: 100%; display: flex; align-items: center; justify-content: center;">
-            <!-- <h1 style=" margin-left: 10px; color: #fff; font-size: 48px; font-weight: bold; ">SERVYX CERTIFY</h1> <br> -->
-        </div>
-        
-    </section>
-
-    <!-- Introduction Section -->
-
-
-    <!-- Vision and Mission Section -->
-     <style>
-        
-     </style>
-   <section class="vision-mission-section section-padding" style="padding: 30px 0; background-color: #f8f9fa;">
-    <div class="container">
-        <div class="row d-flex align-items-stretch">
-            <div class="col-md-6 text-center d-flex" data-aos="fade-up" data-aos-duration="700">
-                <div class="vision-content flex-fill">
-                    <div class="vision-icon">
-                        <img src="https://icons.veryicon.com/png/o/healthcate-medical/medical-icon/eye-25.png" alt="Vision Icon" style="width: 60px; margin-top: 60px;">
+        <!-- About Us Section -->
+        <section class="about-us-section section-padding">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h1>About SERVYX CERTIFY</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="about-section-content">
+                            <h2>About Our Company</h2>
+                            <p>SERVYX CERTIFY provides assistance for exporters, importers, and manufacturers in gaining market access for regulated products in the MENA region. We provide all technical support related to product certification as we have a technically competent team to achieve the best service.</p>
+                        </div>
                     </div>
-                    <h2>Our Vision</h2>
-                    <p>Our objective for the future is to be a global partner for a "safe and excellent world." To be our clients' go-to partner for quality, safety, security, and sustainability solutions that offer real value in both the physical and digital worlds.</p>
-                <br><br><br><br>
                 </div>
             </div>
-            <div class="col-md-6 text-center d-flex" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="mission-content flex-fill">
-                    <div class="mission-icon" style="margin-bottom: 20px;">
-                        <img src="vis.png" alt="Mission Icon" style="width: 60px;">
+        </section>
+
+        <!-- Logos Section -->
+        <section class="logos text-center logos-container-test2 scroll-anim">
+            <div class="container">
+                <div class="row logos-slide-test2">
+                    <div class="col-xs-4 col-sm-2">
+                        <img src="./logo/logoesma.png" alt="ESMA Logo" class="img-responsive brand-image">
                     </div>
-                    <h2>Our Mission</h2>
-                    <p>To assist our clients in reaching their objectives of approaching targeted GCC and Middle East markets by certifying them in accordance with the relevant schemes and a list of authorized standards. To provide all of our services with the highest level of trustworthiness, dependability, integrity, and efficiency. To provide innovative and tailored Pledge, Certification, and inspection services for our customers' businesses and supply chains in order to exceed their requirements.</p>
+                    <div class="col-xs-4 col-sm-2">
+                        <img src="./logo/logosaber.png" alt="SABER Logo" class="img-responsive brand-image">
+                    </div>
+                    <div class="col-xs-4 col-sm-2">
+                        <img src="./logo/logogcm.png" alt="G-MARK Logo" class="img-responsive brand-image">
+                    </div>
+                    <div class="col-xs-4 col-sm-2">
+                        <img src="./logo/logoeqm.png" alt="Emirates Quality Mark" class="img-responsive brand-image">
+                    </div>
+                    <div class="col-xs-4 col-sm-2">
+                        <img src="./logo/logodm.png" alt="Dubai Municipality" class="img-responsive brand-image">
+                    </div>
+                    <div class="col-xs-4 col-sm-2">
+                        <img src="./logo/logomhp.png" alt="MOHP Logo" class="img-responsive brand-image">
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-    
+        <!-- Vision and Mission Section -->
+        <section class="vision-mission-section">
+            <div class="vision-content">
+                <div class="vision-icon">
+                    <img src="https://icons.veryicon.com/png/o/healthcate-medical/medical-icon/eye-25.png" alt="Vision Icon">
+                </div>
+                <h2>Our Vision</h2>
+                <p>Our objective for the future is to be a global partner for a "safe and excellent world." To be our clients' go-to partner for quality, safety, security, and sustainability solutions that offer real value in both the physical and digital worlds.</p><br>
+            </div>
+            <div class="mission-content">
+                <div class="mission-icon">
+                    <img src="vis.png" alt="Mission Icon">
+                </div>
+                <h2>Our Mission</h2>
+                <p>To assist our clients in reaching their objectives of approaching targeted GCC and Middle East markets by certifying them in accordance with the relevant schemes and a list of authorized standards. To provide all of our services with the highest level of trustworthiness, dependability, integrity, and efficiency. To provide innovative and tailored Pledge, Certification, and inspection services for our customers' businesses and supply chains in order to exceed their requirements.</p><br>
+            </div>
+        </section>
+    </main>
 
-</main>
     <!-- Footer Section -->
-    <footer class="footer" data-aos="fade-up" data-aos-duration="800" data-aos-offset="100">
+    <footer class="footer scroll-anim">
         <div class="contact-section">
             <div class="container">
                 <div class="row">
-                   <div class="col-sm-3" data-aos="fade-right" data-aos-duration="300" data-aos-delay="100">
+                    <div class="col-sm-3">
                         <div class="contact-widget">
                             <h3>Servyxx Certify</h3>
-                            <p>Your Trusted Partner in Certification Services </p>
+                            <p>Your Trusted Partner in Certification Services</p>
                         </div>
-                    </div> 
-                    <div class="col-sm-3" data-aos="fade-right" data-aos-duration="300" data-aos-delay="200">
+                    </div>
+                    <div class="col-sm-3">
                         <div class="contact-widget">
                             <h3>Business Hours</h3>
-                            <p>Monday - Thursday @ 08:00 AM - 5:00 </p>
+                            <p>Monday - Thursday @ 08:00 AM - 5:00</p>
                             <p>Sunday - <span>Closed</span></p>
                         </div>
                     </div>
-                    <div class="col-sm-3" data-aos="fade-right" data-aos-duration="300" data-aos-delay="300">
+                    <div class="col-sm-3">
                         <div class="contact-widget">
                             <h3>Quick Links</h3>
                             <ul>
@@ -235,7 +286,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-3" data-aos="fade-right" data-aos-duration="300" data-aos-delay="400">
+                    <div class="col-sm-3">
                         <div class="contact-widget">
                             <a href="https://maps.app.goo.gl/LJypxr3rxQTsxg4s6" target="_blank">
                                 <img src="map.jpg" alt="Map to our office" style="width: 200px; height: 100px; border: 3px solid rgb(255, 255, 255); border-radius: 20px; opacity: 0.5;">
@@ -258,16 +309,15 @@
                 </div>
             </div>
         </div>
-        
-            
-       <div style="height: 90px; background-color: #273142 ; padding-top: 5px; ">
-        <p style=" margin-top:30px; text-align: center; color: #f7f7f8;">&copy; 2024 SERVYX CERTIFY. All rights reserved.</p>
-        <p style=" margin-top:10px; margin-bottom: 5px; text-align: center; color: #494c52;">Crafted by whitebranding</p>
-       </div>
-      
+
+        <div style="height: 90px; background-color: #273142; padding-top: 5px;">
+            <p style="margin-top:30px; text-align: center; color: #f7f7f8;">&copy; 2024 SERVYX CERTIFY. All rights reserved.</p>
+            <p style="text-align: center; background-color: #273142; margin: 0; color: #67799946;">crafted by Whitebranding</p>
+        </div>
     </footer>
 
     <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -276,21 +326,28 @@
     <script src="js/jquery.backstretch.min.js"></script>
     <script src="js/custom.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-    <!-- Initialize AOS -->
+    <!-- Intersection Observer for Scroll Animations -->
     <script>
-        AOS.init({
-            duration: 100,
-            easing: 'ease-in-out',
-            once: false,
-            mirror: false,
-            offset: 50,
-            delay: 100,
-            anchorPlacement: 'top-bottom',
-            
+        document.addEventListener("DOMContentLoaded", function() {
+            const elementsToAnimate = document.querySelectorAll('.vision-content, .mission-content');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Stop observing once visible
+                    }
+                });
+            }, {
+                threshold: 0.1 // Trigger animation when 10% of the element is in the viewport
+            });
+
+            elementsToAnimate.forEach(element => {
+                observer.observe(element);
+            });
         });
     </script>
+
 </body>
 
 </html>
