@@ -125,6 +125,57 @@
     </style>
 </head>
 <body>
+    <header id="header">
+        <div class="top-bar" style="background-color: #2f3a4d; padding: 10px 0;">
+            <div class="container">
+                <div class="info-box">
+                    <i class="fa fa-phone"></i>
+                    <span>+971 65460620</span>
+                </div>
+                <div class="info-box">
+                    <i class="fa fa-envelope"></i>
+                    <span>sales@servyxcertify.com</span>
+                </div>
+                <div class="top-social">
+                    <ul class="list-inline">
+                        <li><a href="https://www.facebook.com/servyxcertification"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/servyx-certification/"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div style="display: flex; align-items: center;">
+                            <a class="navbar-brand" style="display: flex; align-items: center; margin-bottom: 12px;" href="index.html">
+                                <img src="./logo1.png" alt="SERVYX CERTIFY" class="responsive-logo2">
+                            </a>  
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
     <!-- Main Section -->
     <main class="main-content">
         <!-- Why Product Certification is Important Section -->
@@ -364,7 +415,62 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <h3>Servyxx Certify</h3>
+                            <p>Your Trusted Partner in Certification Services</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Thursday @ 08:00 AM - 5:00</p>
+                            <p>Sunday - <span>Closed</span></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog.html">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <a href="https://maps.app.goo.gl/LJypxr3rxQTsxg4s6" target="_blank">
+                                <img src="map.jpg" alt="Map to our office" style="width: 200px; height: 100px; border: 3px solid rgb(255, 255, 255); border-radius: 20px; opacity: 0.5;">
+                            </a>
+                            <h3>Our Office</h3>
+                            <address>
+                                <ul>
+                                    <li><span>Address:</span> Office 104 | 3S Business Centre | Al Sharq | Bu Tena | Sharjah <br> United Arab Emirates</li>
+                                    <li><span>Phone:</span> +971 65460620</li>
+                                    <li><span>Email:</span> sales@servyxcertify.com</li>
+                                </ul>
+                            </address>
+                            <ul class="footer-social list-inline" style="margin-top:20px;">
+                                <li><a href="https://www.linkedin.com/company/servyx-certification/"><i class="fa fa-twitter" style="font-size: 35px; color: #a6aab3;"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/servyx-certification/"><i class="fa fa-linkedin-square" style="font-size: 35px; color: #a6aab3;"></i></a></li>
+                                <li><a href="https://www.facebook.com/servyxcertification"><i class="fa fa-facebook-square" style="font-size: 35px; color: #a6aab3;"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div style="height: 90px; background-color: #273142; padding-top: 5px;">
+            <p style="margin-top:30px; text-align: center; color: #f7f7f8;">&copy; 2024 SERVYX CERTIFY. All rights reserved.</p>
+            <p style="text-align: center; background-color: #273142; margin: 0; color: #67799946;">crafted by Whitebranding</p>
+        </div>
+    </footer>
     <!-- JavaScript Files -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -385,19 +491,18 @@
             const handleIntersect = (entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
+                        entry.target.classList.add('fade-in');
                         observer.unobserve(entry.target);
                     }
                 });
             };
 
             const observer = new IntersectionObserver(handleIntersect, options);
-            const targets = document.querySelectorAll('.fade-in');
+            const targets = document.querySelectorAll('.section-title h1, .section-title h2, .about-section-content p, .about-section-content .service-list, .service-image');
             targets.forEach(target => {
                 observer.observe(target);
             });
         });
     </script>
 </body>
-
 </html>
