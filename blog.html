@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Page Title -->
     <title>Blog - SERVYX CERTIFY</title>
@@ -19,112 +18,251 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
+    <link rel="stylesheet" href="css/neumorphic.css"> 
+    <link rel="stylesheet" href="newstyles.css">
 
+    <!-- Custom Styles -->
+    <style>
+        /* Blog Section Title */
+        .after1-section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .after1-section-title h2 {
+            font-size: 32px;
+            font-weight: bold;
+            
+        }
+
+        /* Blog Post Style */
+        .after1-blog-post {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .after1-blog-post img {
+            max-width: 250px;
+            margin-right: 20px;
+            border-radius: 10px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .after1-blog-post .after1-post-content {
+            flex-grow: 1;
+        }
+
+        .after1-blog-post .after1-post-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .after1-blog-post .after1-date {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .after1-blog-post p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .after1-blog-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+    </style>
+</head>
 <body>
-    <!-- Header Section -->
-    <header id="header">
-        <div class="top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <div class="info-box">
-                            <i class="fa fa-phone"></i>
-                            <div class="info-text">
-                                <h5>Call us:</h5>
-                                <span>+123456789</span>
+        <!-- Header Section -->
+        <header id="header">
+            <div class="top-bar" style="background-color: #2f3a4d; padding: 10px 0;">
+                <div class="container">
+                    <div class="info-box">
+                        <i class="fa fa-phone"></i>
+                        <span>+971 65460620</span>
+                    </div>
+                    <div class="info-box">
+                        <i class="fa fa-envelope"></i>
+                        <span>sales@servyxcertify.com</span>
+                    </div>
+                    <div class="top-social">
+                        <ul class="list-inline">
+                            <li><a href="https://www.facebook.com/servyxcertification"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/servyx-certification/"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="main-menu">
+                <nav class="navbar navbar-default">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div style="display: flex; align-items: center;">
+                                <a class="navbar-brand" style="display: flex; align-items: center; margin-bottom: 12px;" href="index.html">
+                                    <img src="./logo1.png" alt="SERVYX CERTIFY" class="responsive-logo2">
+                                </a>  
                             </div>
                         </div>
-                        <div class="info-box">
-                            <i class="fa fa-envelope"></i>
-                            <div class="info-text">
-                                <h5>Email:</h5>
-                                <span>info@servyxcertify.com</span>
-                            </div>
+                        <div class="collapse navbar-collapse" id="navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li ><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li ><a href="services.html">Services</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li class="active" ><a href="blog.html">Blog</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="top-social pull-right">
-                            <ul class="list-inline">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </nav>
+            </div>
+        </header>
+    
+    <!-- Main Section -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Blog Section Title -->
+            <div class="after1-section-title">
+                <h2>Latest Blogs</h2>
+            </div>
+            
+            <!-- Blog Post Example -->
+            <article class="after1-blog-post">
+                <img src="https://safetysourcellc.com/product_images/uploaded_images/advantages-of-led-lights.jpeg" alt="SASO News">
+                <div class="after1-post-content">
+                    <p class="after1-date">07 Aug</p>
+                    <h1 class="after1-post-title"><a href="#">SASO Tightens Certification for LED Lamps</a></h1>
+                    <p>SASO has introduced new certification requirements for self-ballasted LED lamps, focusing on energy efficiency. These updates are crucial for importers and manufacturers aiming to enter the Saudi market.</p>
+                </div>
+            </article>
+
+            <article class="after1-blog-post">
+                <img src="https://5.imimg.com/data5/GB/CR/IX/SELLER-41614352/handling-hazardous-material-500x500.jpg" alt="ESMA News">
+                <div class="after1-post-content">
+                    <p class="after1-date">05 Aug</p>
+                    <h1 class="after1-post-title"><a href="#">ESMA Launches New Standards for Hazardous Substances</a></h1>
+                    <p>ESMA has rolled out updated regulations on hazardous substances in electrical and electronic equipment, aligning with global standards to ensure environmental and consumer safety in the UAE.</p>
+                </div>
+            </article>
+
+            <article class="after1-blog-post">
+                <img src="https://protrademe.com/wp-content/uploads/2019/12/elctrical-products-page.jpg" alt="GSO News">
+                <div class="after1-post-content">
+                    <p class="after1-date">02 Aug</p>
+                    <h1 class="after1-post-title"><a href="#">GSO Expands Certification for Electrical Products - Gulf Conformity Assessment Programs</a></h1>
+                    <p>The Gulf Standardization Organization (GSO) has expanded its certification services for low voltage electrical products across the GCC, ensuring compliance with new technical regulations.</p>
+                </div>
+            </article>
+
+            <article class="after1-blog-post">
+                <img src="https://img.indiafilings.com/learn/wp-content/uploads/2022/02/12003450/f75db914-3205-45d4-aa3c-aa9b03a5dd6c.jpg" alt="SASO News">
+                <div class="after1-post-content">
+                    <p class="after1-date">07 Aug</p>
+                    <h1 class="after1-post-title"><a href="#">SASO Saber System Streamlines Import Process</a></h1>
+                    <p>SASO's Saber system continues to improve the importation process for regulated products in Saudi Arabia, reducing counterfeit goods and ensuring faster clearance.</p>
+                </div>
+            </article>
+
+            <article class="after1-blog-post">
+                <img src="https://images.financemagnates.com/images/Inside%20ESMA%20headquarters_id_74f2f752-b5e7-48b5-914c-52488593ff95_size900.jpg" alt="ESMA News">
+                <div class="after1-post-content">
+                    <p class="after1-date">05 Aug</p>
+                    <h1 class="after1-post-title"><a href="#">ESMA Enhances Safety Protocols for Consumer Goods</a></h1>
+                    <p>New safety protocols introduced by ESMA for consumer goods ensure that products meet the highest safety and quality standards before reaching the UAE market.</p>
+                </div>
+            </article>
+
+            <article class="after1-blog-post">
+                <img src="https://www.artisan.com.sa/wp-content/uploads/2023/11/gso-signage-3.jpg" alt="GSO News">
+                <div class="after1-post-content">
+                    <p class="after1-date">02 Aug</p>
+                    <h1 class="after1-post-title"><a href="#">GSO Aligns Standards with International Bodies</a></h1>
+                    <p>GSO's partnership with international organizations ensures that certification standards across the GCC are aligned with global best practices, facilitating smoother trade.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <h3>Servyxx Certify</h3>
+                            <p>Your Trusted Partner in Certification Services</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Thursday @ 08:00 AM - 5:00</p>
+                            <p>Sunday - <span>Closed</span></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog.html">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="contact-widget">
+                            <a href="https://maps.app.goo.gl/LJypxr3rxQTsxg4s6" target="_blank">
+                                <img src="map.jpg" alt="Map to our office" style="width: 200px; height: 100px; border: 3px solid rgb(255, 255, 255); border-radius: 20px; opacity: 0.5;">
+                            </a>
+                            <h3>Our Office</h3>
+                            <address>
+                                <ul>
+                                    <li><span>Address:</span> Office 104 | 3S Business Centre | Al Sharq | Bu Tena | Sharjah <br> United Arab Emirates</li>
+                                    <li><span>Phone:</span> +971 65460620</li>
+                                    <li><span>Email:</span> sales@servyxcertify.com</li>
+                                </ul>
+                            </address>
+                            <ul class="footer-social list-inline" style="margin-top:20px;">
+                                <li><a href="https://www.linkedin.com/company/servyx-certification/"><i class="fa fa-twitter" style="font-size: 35px; color: #a6aab3;"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/servyx-certification/"><i class="fa fa-linkedin-square" style="font-size: 35px; color: #a6aab3;"></i></a></li>
+                                <li><a href="https://www.facebook.com/servyxcertification"><i class="fa fa-facebook-square" style="font-size: 35px; color: #a6aab3;"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="main-menu">
-            <nav class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html"><img class="img-responsive" src="images/logo.png" alt="SERVYX CERTIFY"></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li class="active"><a href="blog.html">Blog</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Main Section -->
-    <main class="main-content section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <!-- Blog Post Example -->
-                    <article class="blog-post">
-                        <h1 class="post-title">Latest Blog Post Title</h1>
-                        <p class="date">Published on August 10, 2024</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et urna eget libero placerat tincidunt. Proin vel quam et ligula facilisis gravida. Integer nec lacus at nunc ultrices cursus.</p>
-                        <p>Nullam ac justo sed lorem sollicitudin hendrerit. Sed vel eros fringilla, varius libero sed, pretium sapien.</p>
-                    </article>
-                    <!-- End of Blog Post Example -->
-                </div>
-
-                <div class="col-md-4">
-                    <!-- Additional Blog Posts or Content -->
-                    <section class="recent-posts">
-                        <h2>Recent Posts</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Post Title 1</a></li>
-                            <li><a href="#">Post Title 2</a></li>
-                            <li><a href="#">Post Title 3</a></li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="container text-center">
-                <p>&copy; 2024 SERVYX CERTIFY. All rights reserved.</p>
-            </div>
+        <div style="height: 90px; background-color: #273142; padding-top: 5px;">
+            <p style="margin-top:30px; text-align: center; color: #f7f7f8;">&copy; 2024 SERVYX CERTIFY. All rights reserved.</p>
+            <p style="text-align: center; background-color: #273142; margin: 0; color: #67799946;">crafted by Whitebranding</p>
         </div>
     </footer>
-
+    
     <!-- JavaScript Files -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
-
 </html>
