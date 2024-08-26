@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <!-- Page Title -->
-    <title>Our Services - SERVYX CERTIFY</title>
+    <title>Why Product Certification is Important?</title>
     <!-- Meta Tags for SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the comprehensive services offered by SERVYX CERTIFY, including product certification, laboratory testing, management system consultation, and training & development.">
-    <meta name="keywords" content="SERVYX CERTIFY, services, product certification, laboratory testing, ISO consultation, training and development, UAE, KSA">
+    <meta name="description" content="Learn why product certification is essential, and explore the certification services offered for KSA and UAE markets.">
+    <meta name="keywords" content="Product Certification, KSA Services, UAE Services, SABER, eCosma, Faseh, ESMA, MOIAT, TDRA">
     <meta name="author" content="SERVYX CERTIFY">
 
     <!-- Favicon -->
@@ -22,147 +22,108 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="newstyles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <style>
         /* General Styles */
         body {
             line-height: 1.6;
+            background-color: #f7f7f78f;
+            color: #333;
         }
 
         /* Section Styling */
         section {
-            padding: 60px 0;
+            padding: 20px 0;
+            margin: 0;
         }
-        
-        .section-title h1, .section-title h2 {
-            font-size: 2.5rem;
+
+        .section-title h2 {
+            font-size: 2.4rem;
             font-weight: 700;
             margin-bottom: 20px;
-            padding-top: 30px;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 1s ease-out, transform 1s ease-out;
-        }
-        
-        .about-section-content p, .about-section-content .service-list, .service-image {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 1s ease-out, transform 1s ease-out;
+            margin-top: 40px;
         }
 
-        /* Alternating Background Colors */
-        section:nth-of-type(odd) {
-            background-color: #f9f9f9;
-        }
-
-        section:nth-of-type(even) {
-            background-color: #fff;
-        }
-
-        /* Image Styling */
-        .service-image {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .service-image:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Card Styles */
         .service-card {
             background: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             padding: 20px;
-            margin-bottom: 40px;
+           
+        }
+
+        .service-card-inner {
+            padding: 20px;
+        }
+
+        .service-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .service-image:hover {
+            transform: scale(1.025);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         /* Service List Styles */
         .service-list {
             list-style-type: none;
             padding-left: 0;
-            margin-bottom: 20px;
+            margin-bottom: 0;
             font-weight: bold;
             font-size: 1rem;
             color: #333;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
         .service-list li {
-            padding: 12px 20px;
+            flex: 1 1 calc(50% - 15px);
+            padding: 12px 15px;
             border-radius: 5px;
-            margin-bottom: 15px;
-            background-color: #ebebeb;
+            background-color: #ffffff;
             text-align: center;
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-weight: 600;
+        
             transition: background-color 0.3s ease, transform 0.3s ease;
+            border: 1px solid #ccc;
+    border-radius: 5px;
         }
 
-        .service-list li:hover {
-            background-color: #e0e0e0;
-            transform: translateY(-2px);
-        }
-
-        .service-list li:last-child {
-            margin-bottom: 2px;
-        }
-
-        /* Mobile Responsiveness */
+      
         @media (max-width: 768px) {
-            .section-title h1, .section-title h2 {
-                font-size: 1.8rem;
-            }
-            
-            .about-section-content p {
-                font-size: 1rem;
+            .section-title h2 {
+                font-size: 2rem;
             }
 
-            .service-image {
-                margin: 15px 0;
+            .service-list li {
+                flex: 1 1 100%;
             }
         }
 
         @media (max-width: 480px) {
-            .section-title h1, .section-title h2 {
-                font-size: 1.6rem;
+            .section-title h2 {
+                font-size: 1.8rem;
             }
 
             .about-section-content p {
-                margin-top: 10px;
-                margin-left: 10px;
                 font-size: 1rem;
-                line-height: 1.4;
-                text-align: left;
-            }
-
-            .service-list {
-                padding-left: 0;
-                margin-bottom: 20px;
             }
 
             .service-list li {
-                padding: 8px 0;
-                border-bottom: 1px solid #eee;
+                flex: 1 1 100%;
+                padding: 10px 12px;
             }
-
-            .service-list li:last-child {
-                border-bottom: none;
-            }
-            
-            .service-image {
-                margin: 10px 0;
-            }
-            
         }
-
-        .fade-in {
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-        }
-
+        section {
+    padding: 20px 0; /* Reduce padding */
+}
     </style>
 </head>
 <body>
@@ -217,12 +178,11 @@
             </nav>
         </div>
     </header>
-    <!-- Main Section -->
 
     <!-- Main Section -->
     <main class="main-content">
         <!-- Why Product Certification is Important Section -->
-        <section class="service-item section-padding fade-in">
+        <section class="service-item  fade-in">
             <div class="container">
                 <div class="service-card">
                     <div class="section-title text-center">
@@ -235,7 +195,7 @@
                                 <p>Product certification is frequently required by government purchasing rules. Companies, colleges, and other organizations are following suit. The availability of low-cost, quick-to-market items is growing, making product certification more crucial than ever.</p>
                             </div>
                             <div class="col-md-6">
-                                <img src="https://via.placeholder.com/450x250" alt="Product Certification Image" class="service-image">
+                                <img src="./safe450x250.png" alt="Product Certification Image" class="service-image">
                             </div>
                         </div>
                     </div>
@@ -244,7 +204,7 @@
         </section>
 
         <!-- KSA Services Section -->
-        <section class="service-item section-padding fade-in">
+        <section class="service-item  fade-in">
             <div class="container">
                 <div class="service-card">
                     <div class="section-title text-center">
@@ -254,8 +214,8 @@
                         <!-- SABER Section -->
                         <div class="row">
                             <div class="col-md-6">
-                                <img src="https://via.placeholder.com/500x550" alt="SABER Certification Image" class="service-image">
-                                <img src="https://via.placeholder.com/500x550" alt="SABER Certification Image" class="service-image">
+                                <img src="./saso500x550.png" alt="SABER Certification Image" class="service-image">
+                                <img src="saber500x550.png" alt="SABER Certification Image" class="service-image">
                             </div>
                             
                             <div class="col-md-6">
@@ -296,7 +256,7 @@
                         <!-- eCosma & Faseh Section -->
                         <div class="row" style="margin-top: 20px;">
                             <div class="col-md-6">
-                                <img src="https://via.placeholder.com/500x250" alt="eCosma Certification Image" class="service-image">
+                                <img src="./ecosma500x250.png" alt="eCosma Certification Image" class="service-image">
                             </div>
                             <div class="col-md-6">
                                 <h3>eCosma & Faseh</h3>
@@ -313,169 +273,135 @@
             </div>
         </section>
 
-        <!-- UAE Services Section -->
-        <section class="service-item section-padding fade-in">
-            <div class="container">
-                <div class="service-card">
-                    <div class="section-title text-center">
-                        <h2>UAE Services</h2>
+<!-- UAE Services Section -->
+<section class="service-item fade-in">
+    <div class="container">
+        <div class="service-card">
+            <div class="section-title text-center" style="margin-bottom: 40px;">
+                <h2 style="font-size: 32px; font-weight: bold;">UAE Services</h2>
+            </div>
+            <div class="service-card-inner">
+                <!-- Product Registration in Dubai Municipality Section -->
+                <div class="row" style="margin-bottom: 30px;">
+                    <div class="col-md-6">
+                        <img src="./dubai500x350.png" alt="Dubai Municipality Product Registration" class="service-image" style="width: 100%; height: auto;">
+                        <img src="./productregi.png" alt="Dubai Municipality Product Registration" class="service-image" style="width: 100%; height: auto;">
                     </div>
-                    <div class="service-card-inner">
-                        <!-- Product Registration in Dubai Municipality Section -->
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="https://via.placeholder.com/500x350" alt="Dubai Municipality Product Registration Image" class="service-image">
-                            </div>
-                            <div class="col-md-6">
-                                <h3>Product Registration in Dubai Municipality</h3>
-                                <p>The main purpose of product registration is consumer safety. If the product meets the guidelines set by Dubai Municipality, you will receive a product registration certificate. Every product must be registered before placing it on the market, even if the products are imported for re-export purposes.</p>
-                                <ul class="service-list">
-                                    <li>Cosmetic Product Registration</li>
-                                    <li>Detergent and Disinfectant Product Registration</li>
-                                    <li>Food Product Registration</li>
-                                    <li>Health Supplement Products Registration</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-md-6">
+                        <h3 style="font-size: 28px; margin-bottom: 20px;">Product Registration in Dubai Municipality</h3>
+                        <p>The main purpose of Product Registration is consumer safety. Dubai Municipality holds adequate information to evaluate the safety of products. If the product meets the guidelines set by Dubai Municipality, you will receive a product registration certificate once it is approved or registered. Note that every product must be registered in Dubai Municipality before being placed on the market, even if the products are imported for re-export purposes.</p>
+                        <h4 style="font-size: 24px; margin-top: 20px;">Categories of Product Registration:</h4>
+                        <ul class="service-list" style="margin-top: 10px;">
+                            <li>Cosmetic Product Registration</li>
+                            <li>Detergent and Disinfectant Product Registration</li>
+                            <li>Food Product Registration</li>
+                            <li>Health Supplement Products Registration</li>
+                        </ul>
+                        <h4 style="font-size: 24px; margin-top: 20px;">Why is Product Registration mandatory in UAE?</h4>
+                        <p>Products Registration is necessary as each product imported into Dubai for local trading must be registered with Dubai Municipality and receive a registration certificate, which is required at the time of shipment clearing. The process ensures each cosmetic & packaged food product has all necessary information on its label, helping consumers understand what they are buying. Dubai Municipality checks products for any harmful substances or restricted components, rejecting non-compliant items.</p>
+                        <h4 style="font-size: 24px; margin-top: 20px;">Registration Regulation in UAE</h4>
+                        <p>The Dubai Government standardizes the manufacture, sale, and importation of cosmetic products by requiring that all cosmetic products be registered before being placed on the market. Additionally, individuals must obtain a proper license in Dubai related to cosmetics products.</p>
+                    </div>
+                </div>
 
-                        <!-- ESMA/MOIAT Section -->
-                        <div class="row" style="margin-top: 20px;">
-                            <div class="col-md-6">
-                                <img src="https://via.placeholder.com/500x400" alt="ESMA/MOIAT Image" class="service-image">
-                            </div>
-                            <div class="col-md-6">
-                                <h3>ESMA/MOIAT</h3>
-                                <p>ESMA/MOIAT implements two main schemes: the Emirates Conformity Assessment Scheme (ECAS) and the Emirates Quality Mark (EQM). These schemes ensure that local and imported products comply with UAE National Standards.</p>
-                                <ul class="service-list">
-                                    <li>Cosmetics and Perfumes</li>
-                                    <li>Honey Products</li>
-                                    <li>Milk & Dairy Products</li>
-                                    <li>Low Voltage Equipment</li>
-                                    <li>Juices and Beverages</li>
-                                    <li>Drinking Water</li>
-                                    <li>Electronic Cigarettes</li>
-                                </ul>
-                            </div>
-                        </div>
+                <!-- Cosmetic Products Registration Section -->
+                <div class="row" style="margin-bottom: 30px;">
+                    <div class="col-md-6">
+                        <img src="./cos500x350.png" alt="Cosmetic Products Registration" class="service-image" style="width: 100%; height: auto;">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 style="font-size: 28px; margin-bottom: 20px;">Cosmetic Products Registration in Dubai</h3>
+                        <p>Cosmetic products are any substances or products intended to be placed in contact with external parts of the human body (e.g., epidermis, hair system, nails, lips) or with the teeth and mucous membranes of the oral cavity, for purposes such as cleaning, perfuming, changing appearance, correcting body odors, protecting, or keeping these parts in good condition.</p>
+                        <h4 style="font-size: 24px; margin-top: 20px;">Why is it Mandatory?</h4>
+                        <p>Before placing cosmetic products in the UAE local market, each product must be registered with Dubai Municipality. It is mandatory to obtain a certificate for cosmetic product label assessment from Dubai Municipality, ensuring consumer safety and helping understand the product's purpose.</p>
+                    </div>
+                </div>
 
-                        <!-- TDRA Section -->
-                        <div class="row" style="margin-top: 20px;">
-                            <div class="col-md-6">
-                                <img src="https://via.placeholder.com/500x200" alt="TDRA Image" class="service-image">
-                            </div>
-                            <div class="col-md-6">
-                                <h3>Telecommunications and Digital Regulatory Authority (TDRA)</h3>
-                                <p>We assist in ensuring compliance with TDRA regulations for telecommunication devices. Proper certification is crucial for importing and selling these devices within the UAE.</p>
-                            </div>
-                        </div>
+                <!-- Food Products Registration Section -->
+                <div class="row" style="margin-bottom: 30px;">
+                    <div class="col-md-6">
+                        <img src="./food250.png" alt="Food Products Registration" class="service-image" style="width: 100%; height: auto;">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 style="font-size: 28px; margin-bottom: 20px;">Food Products Registration</h3>
+                        <p>Dubai serves as a major hub for imports and re-exports to Asia & North African countries. Food Products are among the main sectors imported into Dubai and re-exported to other regions. Therefore, Food Product Registration in Dubai is compulsory to ensure the safety and quality of imported and re-exported food, while facilitating food trade through simple and prompt procedures.</p>
+                    </div>
+                </div>
+
+                <!-- Health Supplement Products Registration Section -->
+                <div class="row" style="margin-bottom: 30px;">
+                    <div class="col-md-6">
+                        <img src="./healthsupplemets500x400.png" alt="Health Supplement Products Registration" class="service-image" style="width: 100%; height: auto;">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 style="font-size: 28px; margin-bottom: 20px;">Health Supplement Products Registration</h3>
+                        <p>The purpose of Health Supplement Product Registration is to ensure compliance with endorsed conditions and specifications, preventing the rejection of shipments at Dubai's port or expropriation from the local market. Health Supplement Product Registration is mandatory for importing or placing these products in the local market.</p>
+                        <h4 style="font-size: 24px; margin-top: 20px;">Product Label Specifications:</h4>
+                        <ul class="service-list" style="margin-top: 10px;">
+                            <li>Clear dimensions showing thorough product information</li>
+                            <li>Color image with a light color background</li>
+                            <li>JPEG/PDF format</li>
+                            <li>High resolution</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Detergent and Disinfectant Product Registration Section -->
+                <div class="row" style="margin-bottom: 30px;">
+                    <div class="col-md-6">
+                        <img src="./deterg500x200.png" alt="Detergent and Disinfectant Product Registration" class="service-image" style="width: 100%; height: auto;">
+                    </div>
+                    <div class="col-md-6">
+                        
+                        <h3 style="font-size: 28px; margin-bottom: 20px;">Detergent and Disinfectant Product Registration</h3>
+                        <p>If you plan to import or trade in detergent and disinfectant products in Dubai, you must register them with Dubai Municipality. We provide assistance in simplifying the registration process for companies in need of these services.</p>
+                    </div>
+                </div>
+
+                <!-- ESMA/MOIAT Section -->
+                <div class="row" style="margin-bottom: 30px;">
+                    <div class="col-md-6">
+                        <img src="./eqm500x400.png" alt="ESMA/MOIAT Certification" class="service-image" style="width: 100%; height: auto;">
+                        <img src="./esqmark.png" alt="ESMA/MOIAT Certification" class="service-image" style="width: 100%; height: auto;">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 style="font-size: 28px; margin-bottom: 20px;">ESMA/MOIAT</h3>
+                        <p>ESMA/MOIAT has implemented two main schemes to ensure local and imported products comply with UAE National Standards: the Emirates Conformity Assessment Scheme (ECAS) and the Emirates Quality Mark (EQM).</p>
+                        <h4 style="font-size: 24px; margin-top: 20px;">Emirates Conformity Assessment Scheme (ECAS)</h4>
+                        <p>ECAS is a mandatory program introduced in 2004 to examine compliance with UAE standards for goods, both imported and domestic, to be sold in the country.</p>
+                        <h4 style="font-size: 24px; margin-top: 20px;">Emirates Quality Mark (EQM)</h4>
+                        <p>The EQM is a mark of conformity granted to products that comply with UAE National Standards and are manufactured by organizations with an effective Quality Management System. EQM certification is essential for shipment clearance and is mandatory for specific products like bottled drinking water and most juices.</p>
+                        <h4 style="font-size: 24px; margin-top: 20px;">Types of Products Regulated by ESMA/MOIAT:</h4>
+                        <ul class="service-list" style="margin-top: 10px;">
+                            <li>Cosmetics and Perfumes</li>
+                            <li>Honey Products</li>
+                            <li>Milk & Dairy Products</li>
+                            <li>Low Voltage Equipment</li>
+                            <li>Juices and Beverages</li>
+                            <li>Drinking Water</li>
+                            <li>Electronic Cigarettes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TDRA Section -->
+                <div class="row" style="margin-bottom: 30px;">
+                    <div class="col-md-6">
+                        <img src="./tdra.png" alt="TDRA Compliance" class="service-image" style="width: 100%; height: auto;">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 style="font-size: 28px; margin-bottom: 20px;">Telecommunications and Digital Regulatory Authority (TDRA)</h3>
+                        <p>We assist in ensuring compliance with TDRA regulations for telecommunication devices. Proper certification is crucial for importing and selling these devices within the UAE.</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
+</section>
 
-    <!-- JavaScript Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/cubeportfolio.min.js"></script>
-    <script src="js/magnific-popup.min.js"></script>
-    <script src="js/jquery.backstretch.min.js"></script>
-    <script src="js/custom.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const options = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
-
-            const handleIntersect = (entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            };
-
-            const observer = new IntersectionObserver(handleIntersect, options);
-            const targets = document.querySelectorAll('.fade-in');
-            targets.forEach(target => {
-                observer.observe(target);
-            });
-        });
-    </script>
-
-    <main class="main-content">
-        <!-- Services Overview Section -->
-        <section class="about-us-section">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h1>Our Services</h1>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="about-section-content text-center" style="max-width: 700px; margin: 0 auto;">
-                            <p>
-                                Discover the comprehensive range of services offered by SERVYX CERTIFY tailored to meet the needs of exporters, importers, and manufacturers in the MENA region.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Product Certification Section -->
-        <section class="service-item section-padding">
-            <div class="container">
-                <div class="service-card">
-                    <div class="section-title text-center">
-                        <h2>Product Certification</h2>
-                    </div>
-        
-                    <!-- KSA Certification Section -->
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="./ksa600400.png" alt="KSA Certification Image" class="service-image">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="about-section-content">
-                                <h3>KSA Certification</h3>
-                                <p>We assist with obtaining SASO Quality Mark and SABER Certificate. The Saudi government has set regulatory standards to ensure that products meet the standard mark for safety and quality.</p>
-                                <ul class="service-list">
-                                    <li>SASO</li>
-                                    <li>SABER</li>
-                                    <li>E-COSMA & SFDA</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- UAE Certification Section -->
-                    <div class="row" style="margin-top: 40px;">
-                        <div class="col-md-6">
-                            <img src="./uae600400.png" alt="UAE Certification Image" class="service-image">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="about-section-content">
-                                <h3>UAE Certification</h3>
-                                <p>We help with product registration in Dubai Municipality, ensuring that products meet the safety guidelines set by the municipality.</p>
-                                <ul class="service-list">
-                                    <li>MOIAT (ESMA): ECAS, EQM</li>
-                                    <li>Municipality: MONTAJI, FIRS</li>
-                                    <li>TRDA (Telecommunication Devices)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Laboratory Testing Section -->
-        <section class="service-item section-padding">
+        <section class="service-item ">
             <div class="container">
                 <div class="service-card">
                     <div class="section-title text-center">
@@ -483,7 +409,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="lab600700.png" alt="Laboratory Testing Image" class="service-image">
+                            <img src="./lab.png" alt="Laboratory Testing Image" class="service-image">
                         </div>
                         <div class="col-md-6">
                             <div class="about-section-content">
@@ -507,7 +433,7 @@
         </section>
 
         <!-- Management System Consultation Section -->
-        <section class="service-item section-padding">
+        <section class="service-item ">
             <div class="container">
                 <div class="service-card">
                     <div class="section-title text-center">
@@ -515,7 +441,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="./consult600400.png" alt="Management System Consultation Image" class="service-image">
+                            <img src="consult.png" alt="Management System Consultation Image" class="service-image">
                         </div>
                         <div class="col-md-6">
                             <div class="about-section-content">
@@ -534,7 +460,7 @@
         </section>
 
         <!-- Training & Development Section -->
-        <section class="service-item section-padding">
+        <section class="service-item ">
             <div class="container">
                 <div class="service-card">
                     <div class="section-title text-center">
@@ -542,7 +468,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="./train.png" alt="Training & Development Image" class="service-image">
+                            <img src="./training.png" alt="Training & Development Image" class="service-image">
                         </div>
                         <div class="col-md-6">
                             <div class="about-section-content">
@@ -560,8 +486,8 @@
             </div>
         </section>
     </main>
-    <!-- Footer Section -->
-    <footer class="footer">
+      <!-- Footer Section -->
+      <footer class="footer">
         <div class="contact-section">
             <div class="container">
                 <div class="row">
@@ -627,28 +553,33 @@
     <script src="js/custom.js"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const options = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
+       document.addEventListener('DOMContentLoaded', function () {
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('.section-title h2', {
+        origin: 'bottom',
+        distance: '20px',
+        duration: 1000,
+        easing: 'ease-out',
+        interval: 200
+    });
 
-            const handleIntersect = (entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            };
+    ScrollReveal().reveal('.service-image', {
+        origin: 'left',
+        distance: '30px',
+        duration: 1200,
+        easing: 'ease-out',
+        interval: 300
+    });
 
-            const observer = new IntersectionObserver(handleIntersect, options);
-            const targets = document.querySelectorAll('.section-title h1, .section-title h2, .about-section-content p, .about-section-content .service-list, .service-image');
-            targets.forEach(target => {
-                observer.observe(target);
-            });
-        });
+    ScrollReveal().reveal('.about-section-content p, .about-section-content .service-list', {
+        origin: 'right',
+        distance: '30px',
+        duration: 1200,
+        easing: 'ease-out',
+        interval: 200
+    });
+});
+
     </script>
 </body>
 </html>
