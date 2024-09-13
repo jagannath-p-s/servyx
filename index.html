@@ -12,6 +12,7 @@
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS Stylesheets -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -159,7 +160,84 @@
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
+        
     </style>
+    <style>
+        .about-and-logos {
+            display: flex;
+            flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+        }
+    
+        .about-content {
+            flex: 1 1 100%; /* Set it to take up the full width on mobile */
+            padding-right: 20px;
+            text-align: left; /* Align the content to the left */
+        }
+   
+        /* Adjustments for larger screens */
+        @media (min-width: 768px) {
+            .about-content {
+                flex: 1 1 60%; /* Take 60% of the width */
+                text-align: left;
+            }
+    
+          
+        }
+    </style>
+    <style>
+        /* Font styling */
+        body {
+            font-family: 'Poppins', sans-serif; /* Using Poppins as it's already included */
+            font-size: 16px; /* Base font size */
+            line-height: 1.6; /* Improved readability */
+            color: #333; /* Darker color for better readability */
+        }
+    
+        /* About content styling */
+        .about-content h1 {
+            font-size: 2.5rem; /* Larger heading */
+            font-weight: bold; /* Make heading bold */
+            color: #2f3a4d; /* Darker color for the heading */
+            margin-bottom: 20px;
+        }
+    
+        .about-content p {
+            font-size: 1.7rem; /* Increase paragraph font size */
+            line-height: 1.8; /* Increase line height for readability */
+            color: #555; /* Softer gray for text */
+        }
+    
+        /* Responsive adjustments for mobile */
+        @media (max-width: 768px) {
+            .about-content h1 {
+                font-size: 2rem; /* Adjust heading size for smaller screens */
+            }
+    
+            .about-content p {
+                font-size: 1.1rem; /* Slightly smaller text on mobile */
+            }
+        }
+    
+        /* Additional global font styles (for other sections) */
+        h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            color: #2f3a4d;
+        }
+    
+        h2 {
+            font-size: 2.2rem; /* Adjust section heading size */
+        }
+    
+        h3 {
+            font-size: 1.5rem; /* Adjust smaller headings */
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -178,7 +256,7 @@
                 <div class="top-social">
                     <ul class="list-inline">
                         <li><a href="https://www.facebook.com/servyxcertification"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/servyxcertification/"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="https://www.linkedin.com/company/servyx-certification/"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
@@ -227,12 +305,12 @@
                 </div>
                 <div class="carousel-item-unique" style="background-image: url('/banner2.png');">
                     <div class="banner-overlay" style="height: 100%; display: flex; align-items: center; justify-content: center;">
-                        <h1 style="text-align: left; margin-left: 10px; color: #fff; font-size: 48px; font-weight: bold;">SERVYX CERTIFY</h1>
+                        <h2 style="text-align: left; margin-left: 10px; color: #fff; font-size: 48px; font-weight: bold;">SERVYX CERTIFY</h2>
                     </div>
                 </div>
                 <div class="carousel-item-unique" style="background-image: url('/banner3.png');">
                     <div class="banner-overlay" style="height: 100%; display: flex; align-items: center; justify-content: center;">
-                        <h1 style="text-align: left; margin-left: 10px; color: #fff; font-size: 48px; font-weight: bold;">SERVYX CERTIFY</h1>
+                        <h2 style="text-align: left; margin-left: 10px; color: #fff; font-size: 48px; font-weight: bold;">SERVYX CERTIFY</h2>
                     </div>
                 </div>
             </div>
@@ -243,41 +321,80 @@
         </div>
 
         <!-- About SERVYX CERTIFY Section -->
-        <section class="about-us-section scroll-anim">
-            <div class="container" style="margin-top: 10px;">
-                <div class="blogrow">
-                    <div class="col-md-6">
-                        <div class="about-section-content" style="margin-top: 10px; text-align: left; font-size: 1rem;">
-                            <p>SERVYX CERTIFY is a UAE-based firm founded in 2015 that provides certification & standardization consulting services. Our expert creative minds provide customer consultation support to help us deliver customer excellence in easy-to-transparent and exceptional ways to meet customers' demands.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section class="about-and-logos">
+           <section class="about-and-logos">
+    <div class="about-content">
+        <p>
+            SERVYX CERTIFY is a UAE-based firm founded in 2015 that provides certification & standardization consulting services. Our expert creative minds provide customer consultation support to help us deliver customer excellence in easy-to-transparent and exceptional ways to meet customers' demands.
+        </p>
+    </div>
+  
+</section>
 
-        <!-- Logos Section -->
-        <section class="logos text-center logos-container-test2">
-            <div class="container">
-                <div class="row logos-slide-test2">
-                    <div class="col-xs-4 col-sm-2">
-                        <img src="./logo/logoesma.png" alt="ESMA Logo" class="img-responsive brand-image">
+            <div class="logos-container">
+                <section class="logos text-center logos-container-test2">
+                    <div class="container">
+                        <div class="row logos-slide-test2">
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/esmaaa.png" alt="ESMA Logo" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logosaber.png" alt="SABER Logo" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logogcm.png" alt="G-MARK Logo" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logoeqm.png" alt="Emirates Quality Mark" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logodm.png" alt="Dubai Municipality" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logomhp.png" alt="MOHP Logo" class="img-responsive brand-image">
+                            </div>
+                    
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/esmaaa.png" alt="ESMA Logo" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logosaber.png" alt="SABER Logo" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logogcm.png" alt="G-MARK Logo" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logoeqm.png" alt="Emirates Quality Mark" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logodm.png" alt="Dubai Municipality" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logomhp.png" alt="MOHP Logo" class="img-responsive brand-image">
+                            </div>
+
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/esmaaa.png" alt="ESMA Logo" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logosaber.png" alt="SABER Logo" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logogcm.png" alt="G-MARK Logo" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logoeqm.png" alt="Emirates Quality Mark" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logodm.png" alt="Dubai Municipality" class="img-responsive brand-image">
+                            </div>
+                            <div class="col-xs-4 col-sm-2">
+                                <img src="./logo/logomhp.png" alt="MOHP Logo" class="img-responsive brand-image">
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="col-xs-4 col-sm-2">
-                        <img src="./logo/logosaber.png" alt="SABER Logo" class="img-responsive brand-image">
-                    </div>
-                    <div class="col-xs-4 col-sm-2">
-                        <img src="./logo/logogcm.png" alt="G-MARK Logo" class="img-responsive brand-image">
-                    </div>
-                    <div class="col-xs-4 col-sm-2">
-                        <img src="./logo/logoeqm.png" alt="Emirates Quality Mark" class="img-responsive brand-image">
-                    </div>
-                    <div class="col-xs-4 col-sm-2">
-                        <img src="./logo/logodm.png" alt="Dubai Municipality" class="img-responsive brand-image">
-                    </div>
-                    <div class="col-xs-4 col-sm-2">
-                        <img src="./logo/logomhp.png" alt="MOHP Logo" class="img-responsive brand-image">
-                    </div>
-                </div>
+                </section>
             </div>
         </section>
 
@@ -299,10 +416,13 @@
                     </div>
                     <div class="service-card p-8">
                         <div class="service-icon mb-4">
-                            <i class="fa fa-graduation-cap"></i>
+                            <i class="fa fa-truck"></i>
+
+
                         </div>
-                        <h3 class="text-xl font-semibold mb-3">Training & Development</h3>
-                        <p class="text-gray-600">We provide certified training courses through accredited bodies, including ISO 9001, ISO 22000, ISO 45001, and HALAL awareness training.</p>
+                        <h3 class="text-xl font-semibold mb-3">Shipment Clearance Services</h3>
+                        <p class="text-gray-600">Our customs clearance services ensure your goods meet all legal and regulatory requirements for smooth import or export across international borders.</p>
+
                     </div>
                     <div class="service-card p-8">
                         <div class="service-icon mb-4">
@@ -358,9 +478,10 @@
                     </div>
                     <div class="unique-grid-item scroll-anim">
                         <div class="time">05 Aug</div>
-                        <img class="img-responsive" src="https://5.imimg.com/data5/GB/CR/IX/SELLER-41614352/handling-hazardous-material-500x500.jpg" alt="ESMA News">
-                        <h4><a href="#">ESMA Launches New Standards for Hazardous Substances</a></h4>
-                        <p>ESMA has rolled out updated regulations on hazardous substances in electrical and electronic equipment, aligning with global standards to ensure environmental and consumer safety in the UAE.</p>
+                        <img class="img-responsive" src="https://static.zawya.com/view/acePublic/alias/contentid/ZmFmOTM2NDMtYjgxZi00/0/zake1113-jpg.webp?f=3%3A2&q=0.75&w=640" alt="ESMA News">
+                        <h4><a href="#">MoIAT launches Green ICV to reward companies for adopting sustainable practices</a></h4>
+                        <p>Abu Dhabi-UAE – The Ministry of Industry and Advanced Technology (MoIAT) has announced the adoption of the new Green ICV criteria and bonus within the National In Country Value (ICV) Program to encourage sustainability practices throughout various supply chains</p>
+                        
                     </div>
                     <div class="unique-grid-item scroll-anim">
                         <div class="time">02 Aug</div>
@@ -378,14 +499,14 @@
 
                     <div class="unique-grid-item scroll-anim">
                         <div class="time">05 Aug</div>
-                        <img class="img-responsive" src="https://images.financemagnates.com/images/Inside%20ESMA%20headquarters_id_74f2f752-b5e7-48b5-914c-52488593ff95_size900.jpg" alt="ESMA News">
-                        <h4><a href="#">ESMA Enhances Safety Protocols for Consumer Goods</a></h4>
-                        <p>New safety protocols introduced by ESMA for consumer goods ensure that products meet the highest safety and quality standards before reaching the UAE market.</p>
+                        <img class="img-responsive" src="https://static.zawya.com/view/acePublic/alias/contentid/ZmFmOTM2NDMtYjgxZi00/0/zake1113-jpg.webp?f=3%3A2&q=0.75&w=640" alt="ESMA News">
+                        <h4><a href="#">MoIAT And EDCC Sign A MoU To Boost Local Defense Companies And Exports</a></h4>
+                        <p>The Ministry of Industry and Advanced Technology (MoIAT) and the Emirates Defense Companies Council (EDCC) have signed a memorandum of understanding (MoU) to bolster local defence industries and promote exports</p>
                     </div>
 
                     <div class="unique-grid-item scroll-anim">
                         <div class="time">02 Aug</div>
-                        <img class="img-responsive" src="https://www.artisan.com.sa/wp-content/uploads/2023/11/gso-signage-3.jpg" alt="GSO News">
+                        <img class="img-responsive" src="https://www.gso.org.sa/wp-content/uploads/2023/01/%D8%B4%D8%B9%D8%A7%D8%B1-%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%AA%D9%82%D9%8A%D9%8A%D8%B3-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC%D9%8A%D8%A9-1.jpg" alt="GSO News">
                         <h4><a href="#">GSO Aligns Standards with International Bodies</a></h4>
                         <p>GSO's partnership with international organizations ensures that certification standards across the GCC are aligned with global best practices, facilitating smoother trade.</p>
                     </div>
@@ -403,14 +524,14 @@
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="contact-widget">
-                            <h3>Servyxx Certify</h3>
+                            <h3>Servyx Certify</h3>
                             <p>Your Trusted Partner in Certification Services</p>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="contact-widget">
                             <h3>Business Hours</h3>
-                            <p>Monday - Thursday @ 08:00 AM - 5:00</p>
+                            <p>Monday - Saturday @ 08:00 AM - 5:00 PM</p>
                             <p>Sunday - <span>Closed</span></p>
                         </div>
                     </div>
@@ -438,9 +559,11 @@
                                 </ul>
                             </address>
                             <ul class="footer-social list-inline" style="margin-top:20px;">
-                                <li><a href="https://www.linkedin.com/company/servyx-certification/"><i class="fa fa-twitter" style="font-size: 35px; color: #a6aab3;"></i></a></li>
+                                <li><a href="https://www.instagram.com/servyxcertification/"><i class="fa fa-instagram" style="font-size: 35px; color: #a6aab3;"></i></a></li>
                                 <li><a href="https://www.linkedin.com/company/servyx-certification/"><i class="fa fa-linkedin-square" style="font-size: 35px; color: #a6aab3;"></i></a></li>
+                              
                                 <li><a href="https://www.facebook.com/servyxcertification"><i class="fa fa-facebook-square" style="font-size: 35px; color: #a6aab3;"></i></a></li>
+                               
                             </ul>
                         </div>
                     </div>
